@@ -22,3 +22,6 @@
 
 # Class Diagram
 ![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Expecifications/Classes%20Diagram.PNG?raw=true)
+
+# MVC Pattern
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Expecifications/mvc%20pattern.png?raw=true)
