@@ -21,7 +21,7 @@
 8. Deve haver algum tipo de funcionalidade para apagar toda a lista de veículos estacionados.
 
 # Class Diagram
-![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Expecifications/Classes%20Diagram%20img.PNG?raw=true)
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Expecifications/Classes%20Diagram%20PNG.PNG?raw=true)
 
 # MVC Pattern
 ![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Expecifications/mvc%20pattern.png?raw=true)
