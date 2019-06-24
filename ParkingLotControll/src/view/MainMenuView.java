@@ -2,13 +2,10 @@
 package view;
 
 public class MainMenuView extends javax.swing.JFrame {
-
     public MainMenuView() {
         initComponents();
     }
-    
-    //update variable names to english
-    
+
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -189,7 +186,7 @@ public class MainMenuView extends javax.swing.JFrame {
                 .addComponent(jButtonRegVersion))
         );
 
-        jButtonRegNaturalPerson.setText("Register Natural Person");
+        jButtonRegNaturalPerson.setText("Register Nat. Person");
         jButtonRegNaturalPerson.setToolTipText("");
         jButtonRegNaturalPerson.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -216,7 +213,7 @@ public class MainMenuView extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addComponent(jButtonListNaturalPerson, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButtonRegNaturalPerson, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+            .addComponent(jButtonRegNaturalPerson, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -228,7 +225,7 @@ public class MainMenuView extends javax.swing.JFrame {
                 .addComponent(jButtonRegNaturalPerson))
         );
 
-        jButtonRegLegalPeople.setText("Register Legal People");
+        jButtonRegLegalPeople.setText("Register Leg. Person");
         jButtonRegLegalPeople.setToolTipText("");
         jButtonRegLegalPeople.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -255,7 +252,7 @@ public class MainMenuView extends javax.swing.JFrame {
                 .addComponent(jLabel8)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addComponent(jButtonListLegalPerson, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButtonRegLegalPeople, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+            .addComponent(jButtonRegLegalPeople, javax.swing.GroupLayout.PREFERRED_SIZE, 150, Short.MAX_VALUE)
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -385,57 +382,61 @@ public class MainMenuView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonListBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListBrandActionPerformed
-        ListCarBrandView telaListMarca = new ListCarBrandView();
-        telaListMarca.setVisible(true);
+        ListCarBrandView screenListCarBrand = new ListCarBrandView();
+        screenListCarBrand.setVisible(true);
         
-        //Instanciando um controller para telas de cadastro de marca e repassando a tela instanciada como parametro
-        //ControllerListMarca controllerListaMarca = new ControllerListMarca(telaListMarca);
+        //Instanciando um controller para screens de cadastro de marca e repassando a screen instanciada como parametro
+        //ControllerListCarBrand controllerListaCarBrand = new ControllerListCarBrand(screenListCarBrand);
         
     }//GEN-LAST:event_jButtonListBrandActionPerformed
 
     private void jButtonRegBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegBrandActionPerformed
-        RegCarBrandView telaCadMarca = new RegCarBrandView();
-        telaCadMarca.setVisible(true);
+        RegCarBrandView screenCadCarBrand = new RegCarBrandView();
+        screenCadCarBrand.setVisible(true);
         
-        //Instanciando um controller para telas de cadastro de marca e repassando a tela instanciada como parametro
-        //ControllerCadMarca controllerCadastroMarca = new ControllerCadMarca(telaCadMarca);
+        //Instanciando um controller para screens de cadastro de marca e repassando a screen instanciada como parametro
+        //ControllerCadCarBrand controllerCadastroCarBrand = new ControllerCadCarBrand(screenCadCarBrand);
         
     }//GEN-LAST:event_jButtonRegBrandActionPerformed
 
     private void jButtonRegModelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegModelActionPerformed
-        RegCarModelView telaCadModelo = new RegCarModelView();
-        telaCadModelo.setVisible(true);
+        RegCarModelView screenCadCarModel = new RegCarModelView();
+        screenCadCarModel.setVisible(true);
     }//GEN-LAST:event_jButtonRegModelActionPerformed
 
     private void jButtonListModelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListModelActionPerformed
-        ListCarModelView telaListModelo = new ListCarModelView();
-        telaListModelo.setVisible(true);
+        ListCarModelView screenListCarModel = new ListCarModelView();
+        screenListCarModel.setVisible(true);
     }//GEN-LAST:event_jButtonListModelActionPerformed
 
     private void jButtonRegVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegVersionActionPerformed
-        RegCarVersionView telaCadVersao = new RegCarVersionView();
-        telaCadVersao.setVisible(true);
+        RegCarVersionView screenCadCarVersion = new RegCarVersionView();
+        screenCadCarVersion.setVisible(true);
     }//GEN-LAST:event_jButtonRegVersionActionPerformed
 
     private void jButtonListVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListVersionActionPerformed
-        ListCarVersionView telaListVersao = new ListCarVersionView();
-        telaListVersao.setVisible(true);
+        ListCarVersionView screenListCarVersion = new ListCarVersionView();
+        screenListCarVersion.setVisible(true);
     }//GEN-LAST:event_jButtonListVersionActionPerformed
 
     private void jButtonRegNaturalPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegNaturalPersonActionPerformed
-        // TODO add your handling code here:
+        RegNaturalPersonView screenCadNaturalPersonView = new RegNaturalPersonView();
+        screenCadNaturalPersonView.setVisible(true);
     }//GEN-LAST:event_jButtonRegNaturalPersonActionPerformed
 
     private void jButtonListNaturalPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListNaturalPersonActionPerformed
-        // TODO add your handling code here:
+        ListNaturalPersonView screenListNaturalPerson = new ListNaturalPersonView();
+        screenListNaturalPerson.setVisible(true);
     }//GEN-LAST:event_jButtonListNaturalPersonActionPerformed
 
     private void jButtonRegLegalPeopleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegLegalPeopleActionPerformed
-        // TODO add your handling code here:
+        RegLegalPersonView screenCadLegalPersonView = new RegLegalPersonView();
+        screenCadLegalPersonView.setVisible(true);
     }//GEN-LAST:event_jButtonRegLegalPeopleActionPerformed
 
     private void jButtonListLegalPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListLegalPersonActionPerformed
-        // TODO add your handling code here:
+        ListLegalPersonView screenListLegalPerson = new ListLegalPersonView();
+        screenListLegalPerson.setVisible(true);
     }//GEN-LAST:event_jButtonListLegalPersonActionPerformed
 
     private void jButtonRegVehicleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegVehicleActionPerformed
@@ -446,35 +447,7 @@ public class MainMenuView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonListVehicleActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MainMenuView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MainMenuView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MainMenuView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MainMenuView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MainMenuView().setVisible(true);

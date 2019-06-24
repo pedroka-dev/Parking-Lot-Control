@@ -1,7 +1,7 @@
 
 package model.bo;
 
-public class CarVersion {       //car version (e.g. sedan). One version can have many existing vehicles. 
+public class CarVersion {       //car version (e.g. Z/28). One version can have many existing vehicles. 
     private String nameVersion;
     private String typeFuel;
     private int numberSeats;

@@ -336,7 +336,7 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <Component id="jButtonListNaturalPerson" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonRegNaturalPerson" alignment="0" pref="150" max="32767" attributes="0"/>
+                      <Component id="jButtonRegNaturalPerson" alignment="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -354,7 +354,7 @@
               <SubComponents>
                 <Component class="javax.swing.JButton" name="jButtonRegNaturalPerson">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Register Natural Person"/>
+                    <Property name="text" type="java.lang.String" value="Register Nat. Person"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <Events>
@@ -408,7 +408,7 @@
               <SubComponents>
                 <Component class="javax.swing.JButton" name="jButtonRegLegalPeople">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Register Legal People"/>
+                    <Property name="text" type="java.lang.String" value="Register Leg. Person"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <Events>

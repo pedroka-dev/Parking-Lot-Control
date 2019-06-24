@@ -1,7 +1,7 @@
 
 package model.bo;
 
-public class CarBrand {   //car brand (e.g: ford). One brand can have many car models
+public class CarBrand {   //car brand (e.g: Ford). One brand can have many car models
     private String nameBrand;
 
     

@@ -1,16 +1,14 @@
 
 package model.bo;   
 
-public class CarModel {     //car model (e.g: camaro). One model can have many car version. Please do not confuse with "model.x" java packages
+public class CarModel {     //car model (e.g: Camaro). One model can have many car version. Please do not confuse with "model.x" java packages
     private String nameModel;
-    private String nameClass;
-    private String nameType;
+    private String nameType;        //(e.g: Sedan, SUV, Pick-up)
     private CarBrand carBrand;
 
     
-    public CarModel(String nameModel, String nameClass, String nameType, CarBrand carBrand) {
+    public CarModel(String nameModel, String nameType, CarBrand carBrand) {
         this.nameModel = nameModel;
-        this.nameClass = nameClass;
         this.nameType = nameType;
         this.carBrand = carBrand;
     }
@@ -26,14 +24,6 @@ public class CarModel {     //car model (e.g: camaro). One model can have many c
 
     public void setNameModel(String nameModel) {
         this.nameModel = nameModel;
-    }
-
-    public String getNameClass() {
-        return nameClass;
-    }
-
-    public void setNameClass(String nameClass) {
-        this.nameClass = nameClass;
     }
 
     public String getNameType() {
@@ -56,7 +46,6 @@ public class CarModel {     //car model (e.g: camaro). One model can have many c
     @Override
     public String toString() {
         return "CarModel{" + "nameModel=" + nameModel + 
-                ", nameClass=" + nameClass + ", nameType=" + nameType + 
-                ", carBrand=" + carBrand + '}';
+                ", nameType=" + nameType + ", carBrand=" + carBrand + '}';
     }
 }

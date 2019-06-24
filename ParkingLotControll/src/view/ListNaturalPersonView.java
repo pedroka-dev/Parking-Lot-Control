@@ -3,8 +3,8 @@ package view;
 
 import javax.swing.JButton;
 
-public class ListCarModelView extends javax.swing.JFrame {
-    public ListCarModelView() {
+public class ListNaturalPersonView extends javax.swing.JFrame {
+    public ListNaturalPersonView() {
         initComponents();
     }
 
@@ -15,7 +15,6 @@ public class ListCarModelView extends javax.swing.JFrame {
     public JButton getjButtonExit() {
         return jButtonExit;
     }
-    
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -108,7 +107,7 @@ public class ListCarModelView extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("List of Models");
+        jLabel1.setText("List of Natural People");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -153,10 +152,11 @@ public class ListCarModelView extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButtonExitActionPerformed
 
+    
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ListCarModelView().setVisible(true);
+                new ListNaturalPersonView().setVisible(true);
             }
         });
     }
