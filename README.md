@@ -1,5 +1,5 @@
 # Introduction
-  A PoC App developed in Java, using MVC + DAO + Serialization patterns. In the end of development, the app must be able to keep a log of entries and exit of any registered car in the parking lot. All vehicle's information, from owner to technical details, will be stored on the database as well. 
+  A PoC App developed in Java, using MVC + DAO + Serialization patterns. In the end of development, the app must be able to keep a log of entries and exit of any registered car in the parking lot. All vehicle's information that can be used for identification, such as owner and technical details, will be stored on the database as well. The user of the App can register new Vehicles (and its brand, model an versions) and owners (Natural or Legal Person) at any time.
 
 # Main Goals (English)
 1. By default, Java OOP will be used for development. 
