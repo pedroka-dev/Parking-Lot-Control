@@ -1,8 +1,8 @@
 
 package model.bo;
 
-public class LegalPerson extends Person {       //Corporations/Organizations e.g. McDonalds
-    public int numberCnpj;          //CNPJ is used for a Legal Person's ID in Brazil
+public class LegalPerson extends Person {       //Corporations/Organizations (e.g. McDonalds)
+    public int numberCnpj;          //CNPJ is used for Legal Person's ID in Brazil
     public int inscEstadual;        //state registration / state tax number
 
     

@@ -4,7 +4,7 @@ package model.bo;
 public class NaturalPerson extends Person {     //Real person (e.g. John)
     private int numberCpf;
     private int numberRg;
-    //CPF and RG is used for a Natural Person's ID in Brazil
+    //CPF and RG are used for Natural Person's ID in Brazil
     
     public NaturalPerson(int numberCpf, int numberRg, String name, String email, String adress, int phone) {
         super(name, email, adress, phone);

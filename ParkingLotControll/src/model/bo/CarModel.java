@@ -6,6 +6,11 @@ public class CarModel {     //car model (e.g: Camaro). One model can have many c
     private String nameType;        //(e.g: Sedan, SUV, Pick-up)
     private CarBrand carBrand;
 
+   
+    public String nameToString() {       //is used to show the entire name of the vehicle. 
+        return carBrand.nameToString() + " " + nameModel;       //returns "BrandX ModelY"
+    }
+    
     
     public CarModel(String nameModel, String nameType, CarBrand carBrand) {
         this.nameModel = nameModel;

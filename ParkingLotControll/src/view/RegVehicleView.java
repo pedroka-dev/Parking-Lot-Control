@@ -6,8 +6,8 @@ import javax.swing.JComboBox;
 import javax.swing.JTextField;
 
 
-public class RegCarVersionView extends javax.swing.JFrame {
-    public RegCarVersionView() {
+public class RegVehicleView extends javax.swing.JFrame {
+    public RegVehicleView() {
         initComponents();
     }
 
@@ -19,30 +19,46 @@ public class RegCarVersionView extends javax.swing.JFrame {
         return jButtonSave;
     }
 
-    public JComboBox<String> getjComboCarModel() {
-        return jComboCarModel;
+    public JComboBox<String> getjComboCarVersion() {
+        return jComboCarVersion;
     }
 
-    public JComboBox<String> getjComboHasBreakAbs() {
-        return jComboHasBreakAbs;
+    public void setjComboCarVersion(JComboBox<String> jComboCarVersion) {
+        this.jComboCarVersion = jComboCarVersion;
     }
 
-    public JComboBox<String> getjComboHasTransAuto() {
-        return jComboHasTransAuto;
+    public JComboBox<String> getjComboOwner() {
+        return jComboOwner;
     }
 
-    public JTextField getjTxtNumberSeats() {
-        return jTxtNumberSeats;
+    public void setjComboOwner(JComboBox<String> jComboOwner) {
+        this.jComboOwner = jComboOwner;
     }
 
-    public JTextField getjTxtTypeFuel() {
-        return jTxtTypeFuel;
+    public JTextField getjTxtNameColor() {
+        return jTxtNameColor;
     }
 
-    public JTextField getjTxtnNameVersion() {
-        return jTxtnNameVersion;
+    public void setjTxtNameColor(JTextField jTxtNameColor) {
+        this.jTxtNameColor = jTxtNameColor;
     }
-    
+
+    public JTextField getjTxtYearFabrication() {
+        return jTxtYearFabrication;
+    }
+
+    public void setjTxtYearFabrication(JTextField jTxtYearFabrication) {
+        this.jTxtYearFabrication = jTxtYearFabrication;
+    }
+
+    public JTextField getjTxtnNumberPlate() {
+        return jTxtnNumberPlate;
+    }
+
+    public void setjTxtnNumberPlate(JTextField jTxtnNumberPlate) {
+        this.jTxtnNumberPlate = jTxtnNumberPlate;
+    }
+
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -52,26 +68,23 @@ public class RegCarVersionView extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jTxtnNameVersion = new javax.swing.JTextField();
+        jTxtnNumberPlate = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jButtonSave = new javax.swing.JButton();
         jButtonExit = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
-        jComboCarModel = new javax.swing.JComboBox<>();
+        jComboOwner = new javax.swing.JComboBox<>();
         jPanel5 = new javax.swing.JPanel();
-        jTxtNumberSeats = new javax.swing.JTextField();
+        jTxtNameColor = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
-        jTxtTypeFuel = new javax.swing.JTextField();
+        jTxtYearFabrication = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        jComboHasTransAuto = new javax.swing.JComboBox<>();
         jPanel10 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        jComboHasBreakAbs = new javax.swing.JComboBox<>();
+        jComboCarVersion = new javax.swing.JComboBox<>();
 
         jButton1.setText("jButton1");
 
@@ -81,21 +94,21 @@ public class RegCarVersionView extends javax.swing.JFrame {
         jLabel1.setBackground(new java.awt.Color(204, 204, 204));
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Register Version");
+        jLabel1.setText("Register Vehicle");
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jPanel2.setMaximumSize(new java.awt.Dimension(217, 57));
         jPanel2.setMinimumSize(new java.awt.Dimension(217, 57));
         jPanel2.setPreferredSize(new java.awt.Dimension(217, 57));
 
-        jTxtnNameVersion.addActionListener(new java.awt.event.ActionListener() {
+        jTxtnNumberPlate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtnNameVersionActionPerformed(evt);
+                jTxtnNumberPlateActionPerformed(evt);
             }
         });
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel3.setText("Version Name:");
+        jLabel3.setText("Plate Number:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -103,10 +116,10 @@ public class RegCarVersionView extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTxtnNameVersion, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE)
+                    .addComponent(jTxtnNumberPlate, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 109, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -114,7 +127,7 @@ public class RegCarVersionView extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTxtnNameVersion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTxtnNumberPlate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 
@@ -152,9 +165,9 @@ public class RegCarVersionView extends javax.swing.JFrame {
         jPanel6.setPreferredSize(new java.awt.Dimension(217, 57));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel6.setText("Brand and Model:");
+        jLabel6.setText("Owner:");
 
-        jComboCarModel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboOwner.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -164,8 +177,8 @@ public class RegCarVersionView extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel6)
-                        .addGap(0, 83, Short.MAX_VALUE))
-                    .addComponent(jComboCarModel, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 155, Short.MAX_VALUE))
+                    .addComponent(jComboOwner, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
@@ -173,21 +186,21 @@ public class RegCarVersionView extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboCarModel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jComboOwner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 
         jPanel5.setMaximumSize(new java.awt.Dimension(217, 57));
         jPanel5.setMinimumSize(new java.awt.Dimension(217, 57));
 
-        jTxtNumberSeats.addActionListener(new java.awt.event.ActionListener() {
+        jTxtNameColor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtNumberSeatsActionPerformed(evt);
+                jTxtNameColorActionPerformed(evt);
             }
         });
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel5.setText("Number of Seats:");
+        jLabel5.setText("Color:");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -195,10 +208,10 @@ public class RegCarVersionView extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTxtNumberSeats)
+                    .addComponent(jTxtNameColor)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel5)
-                        .addGap(0, 87, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -206,21 +219,21 @@ public class RegCarVersionView extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTxtNumberSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTxtNameColor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
         jPanel7.setMaximumSize(new java.awt.Dimension(217, 57));
         jPanel7.setMinimumSize(new java.awt.Dimension(217, 57));
 
-        jTxtTypeFuel.addActionListener(new java.awt.event.ActionListener() {
+        jTxtYearFabrication.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtTypeFuelActionPerformed(evt);
+                jTxtYearFabricationActionPerformed(evt);
             }
         });
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel7.setText("Type of Fuel:");
+        jLabel7.setText("Year of Fabrication:");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -228,10 +241,10 @@ public class RegCarVersionView extends javax.swing.JFrame {
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTxtYearFabrication, javax.swing.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel7)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jTxtTypeFuel))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
@@ -239,46 +252,17 @@ public class RegCarVersionView extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTxtTypeFuel, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTxtYearFabrication, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
-        );
-
-        jPanel9.setMaximumSize(new java.awt.Dimension(217, 57));
-        jPanel9.setMinimumSize(new java.awt.Dimension(217, 57));
-
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel9.setText("Has auto trasmission?");
-
-        jComboHasTransAuto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addGap(0, 52, Short.MAX_VALUE))
-                    .addComponent(jComboHasTransAuto, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboHasTransAuto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel10.setMaximumSize(new java.awt.Dimension(217, 57));
         jPanel10.setMinimumSize(new java.awt.Dimension(217, 57));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel10.setText("Has ABS break?");
+        jLabel10.setText("Brand,  Model and Version:");
 
-        jComboHasBreakAbs.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboCarVersion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -289,7 +273,7 @@ public class RegCarVersionView extends javax.swing.JFrame {
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addComponent(jLabel10)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jComboHasBreakAbs, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jComboCarVersion, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
@@ -297,7 +281,7 @@ public class RegCarVersionView extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboHasBreakAbs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jComboCarVersion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -311,12 +295,11 @@ public class RegCarVersionView extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -329,12 +312,10 @@ public class RegCarVersionView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(8, 8, 8))
         );
@@ -362,22 +343,22 @@ public class RegCarVersionView extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButtonExitActionPerformed
 
-    private void jTxtnNameVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtnNameVersionActionPerformed
+    private void jTxtnNumberPlateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtnNumberPlateActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtnNameVersionActionPerformed
+    }//GEN-LAST:event_jTxtnNumberPlateActionPerformed
 
-    private void jTxtNumberSeatsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtNumberSeatsActionPerformed
+    private void jTxtNameColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtNameColorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtNumberSeatsActionPerformed
+    }//GEN-LAST:event_jTxtNameColorActionPerformed
 
-    private void jTxtTypeFuelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtTypeFuelActionPerformed
+    private void jTxtYearFabricationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtYearFabricationActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtTypeFuelActionPerformed
+    }//GEN-LAST:event_jTxtYearFabricationActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new RegCarVersionView().setVisible(true);
+                new RegVehicleView().setVisible(true);
             }
         });
     }
@@ -386,16 +367,14 @@ public class RegCarVersionView extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonExit;
     private javax.swing.JButton jButtonSave;
-    private javax.swing.JComboBox<String> jComboCarModel;
-    private javax.swing.JComboBox<String> jComboHasBreakAbs;
-    private javax.swing.JComboBox<String> jComboHasTransAuto;
+    private javax.swing.JComboBox<String> jComboCarVersion;
+    private javax.swing.JComboBox<String> jComboOwner;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
@@ -403,9 +382,8 @@ public class RegCarVersionView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel9;
-    private javax.swing.JTextField jTxtNumberSeats;
-    private javax.swing.JTextField jTxtTypeFuel;
-    private javax.swing.JTextField jTxtnNameVersion;
+    private javax.swing.JTextField jTxtNameColor;
+    private javax.swing.JTextField jTxtYearFabrication;
+    private javax.swing.JTextField jTxtnNumberPlate;
     // End of variables declaration//GEN-END:variables
 }

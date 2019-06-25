@@ -5,6 +5,11 @@ public class CarBrand {   //car brand (e.g: Ford). One brand can have many car m
     private String nameBrand;
 
     
+    public String nameToString() {       //is used to show the entire name of the vehicle. 
+        return nameBrand;
+    }
+    
+    
     public CarBrand(String nameBrand) {
         this.nameBrand = nameBrand;
     }

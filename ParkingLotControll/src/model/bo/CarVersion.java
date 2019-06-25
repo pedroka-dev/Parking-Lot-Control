@@ -9,6 +9,11 @@ public class CarVersion {       //car version (e.g. Z/28). One version can have 
     private boolean hasTransAuto;
     private CarModel carModel;
     
+    
+    public String nameToString() {       //is used to show the entire name of the vehicle. 
+        return carModel.nameToString() + " " + nameVersion;       //returns "BrandX ModelY VersionZ"
+    }
+    
 
     public CarVersion(String nameVersion, String typeFuel, int numberSeats, boolean hasBrakeAbs, boolean hasTransAuto, CarModel carModel) {
         this.nameVersion = nameVersion;
