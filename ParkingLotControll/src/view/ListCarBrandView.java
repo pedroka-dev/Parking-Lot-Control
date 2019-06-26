@@ -27,6 +27,7 @@ public class ListCarBrandView extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jButtonEdit = new javax.swing.JButton();
         jButtonExit = new javax.swing.JButton();
+        jButtonDelete = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -76,6 +77,13 @@ public class ListCarBrandView extends javax.swing.JFrame {
             }
         });
 
+        jButtonDelete.setText("Delete");
+        jButtonDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonDeleteActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -88,7 +96,9 @@ public class ListCarBrandView extends javax.swing.JFrame {
                         .addGap(0, 1, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButtonEdit)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(82, 82, 82)
+                        .addComponent(jButtonDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                        .addGap(80, 80, 80)
                         .addComponent(jButtonExit)))
                 .addContainerGap())
         );
@@ -100,7 +110,8 @@ public class ListCarBrandView extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonEdit)
-                    .addComponent(jButtonExit))
+                    .addComponent(jButtonExit)
+                    .addComponent(jButtonDelete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -154,6 +165,10 @@ public class ListCarBrandView extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButtonExitActionPerformed
 
+    private void jButtonDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDeleteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonDeleteActionPerformed
+
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -164,6 +179,7 @@ public class ListCarBrandView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonDelete;
     private javax.swing.JButton jButtonEdit;
     private javax.swing.JButton jButtonExit;
     private javax.swing.JLabel jLabel1;
