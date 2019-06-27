@@ -1,17 +1,22 @@
 
 package model.bo;
 
-public abstract class Person {       //super of LegalPerson and Natural Person
+public class Person {      //Registered owner of a vehicle   
     private String name;
     private String email;
     private String adress;
+    private String numberRg;
+    private String numberCnh;
+    private int numberCpf;
     private int phone;
 
-    
-    public Person(String name, String email, String adress, int phone) {
+    public Person(String name, String email, String adress, String numberRg, String numberCnh, int numberCpf, int phone) {
         this.name = name;
         this.email = email;
         this.adress = adress;
+        this.numberRg = numberRg;
+        this.numberCnh = numberCnh;
+        this.numberCpf = numberCpf;
         this.phone = phone;
     }
     
@@ -52,9 +57,35 @@ public abstract class Person {       //super of LegalPerson and Natural Person
         this.phone = phone;
     }
 
-    
+    public String getNumberRg() {
+        return numberRg;
+    }
+
+    public void setNumberRg(String numberRg) {
+        this.numberRg = numberRg;
+    }
+
+    public String getNumberCnh() {
+        return numberCnh;
+    }
+
+    public void setNumberCnh(String numberCnh) {
+        this.numberCnh = numberCnh;
+    }
+
+    public int getNumberCpf() {
+        return numberCpf;
+    }
+
+    public void setNumberCpf(int numberCpf) {
+        this.numberCpf = numberCpf;
+    }
+
     @Override
     public String toString() {
-        return "Person{" + "name=" + name + ", email=" + email + ", adress=" + adress + ", phone=" + phone + '}';
-    }
+        return "Person{" + "name=" + name + ", email=" + email + 
+                ", adress=" + adress + ", numberRg=" + numberRg + 
+                ", numberCnh=" + numberCnh + ", numberCpf=" + numberCpf + 
+                ", phone=" + phone + '}';
+    }  
 }

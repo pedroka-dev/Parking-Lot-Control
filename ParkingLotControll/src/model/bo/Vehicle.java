@@ -3,32 +3,24 @@ package model.bo;
 
 public class Vehicle {
     private String nameColor;
-    private int numberPlate;
+    private String numberPlate;
+    private String engineType;      //(e.g. 1.0, 1.5)
     private int yearFabrication;
-    private int numberChassis;
     private CarVersion carVersion;
-    private Entry entry;
-    private Exit exit;
-    private LegalPerson legalPerson;
-    private NaturalPerson naturalPerson;
+    private Person Person;
 
-    
-    public Vehicle(String nameColor, int numberPlate, int yearFabrication, int numberChassis, CarVersion carVersion, Entry entry, Exit exit, LegalPerson legalPerson, NaturalPerson naturalPerson) {
+    public Vehicle(String nameColor, String numberPlate, String engineType, int yearFabrication, CarVersion carVersion, Person Person) {
         this.nameColor = nameColor;
         this.numberPlate = numberPlate;
+        this.engineType = engineType;
         this.yearFabrication = yearFabrication;
-        this.numberChassis = numberChassis;
         this.carVersion = carVersion;
-        this.entry = entry;
-        this.exit = exit;
-        this.legalPerson = legalPerson;
-        this.naturalPerson = naturalPerson;
+        this.Person = Person;
     }
-    
+
     public Vehicle() {
         
     }
-    
     
     public String getNameColor() {
         return nameColor;
@@ -36,14 +28,6 @@ public class Vehicle {
 
     public void setNameColor(String nameColor) {
         this.nameColor = nameColor;
-    }
-
-    public int getNumberPlate() {
-        return numberPlate;
-    }
-
-    public void setNumberPlate(int numberPlate) {
-        this.numberPlate = numberPlate;
     }
 
     public int getYearFabrication() {
@@ -54,14 +38,6 @@ public class Vehicle {
         this.yearFabrication = yearFabrication;
     }
 
-    public int getNumberChassis() {
-        return numberChassis;
-    }
-
-    public void setNumberChassis(int numberChassis) {
-        this.numberChassis = numberChassis;
-    }
-
     public CarVersion getCarVersion() {
         return carVersion;
     }
@@ -70,44 +46,38 @@ public class Vehicle {
         this.carVersion = carVersion;
     }
 
-    public Entry getEntry() {
-        return entry;
+    public String getNumberPlate() {
+        return numberPlate;
     }
 
-    public void setEntry(Entry entry) {
-        this.entry = entry;
+    public void setNumberPlate(String numberPlate) {
+        this.numberPlate = numberPlate;
     }
 
-    public Exit getExit() {
-        return exit;
+    public String getEngineType() {
+        return engineType;
     }
 
-    public void setExit(Exit exit) {
-        this.exit = exit;
+    public void setEngineType(String engineType) {
+        this.engineType = engineType;
     }
 
-    public LegalPerson getLegalPerson() {
-        return legalPerson;
+    public Person getPerson() {
+        return Person;
     }
 
-    public void setLegalPerson(LegalPerson legalPerson) {
-        this.legalPerson = legalPerson;
-    }
-
-    public NaturalPerson getNaturalPerson() {
-        return naturalPerson;
-    }
-
-    public void setNaturalPerson(NaturalPerson naturalPerson) {
-        this.naturalPerson = naturalPerson;
+    public void setPerson(Person Person) {
+        this.Person = Person;
     }
 
     @Override
     public String toString() {
         return "Vehicle{" + "nameColor=" + nameColor + 
-                ", numberPlate=" + numberPlate + ", yearFabrication=" + yearFabrication + 
-                ", numberChassis=" + numberChassis + ", carVersion=" + carVersion + 
-                ", entry=" + entry + ", exit=" + exit + ", legalPerson=" + legalPerson + 
-                ", naturalPerson=" + naturalPerson + '}';
+                ", numberPlate=" + numberPlate + ", engineType=" + engineType + 
+                ", yearFabrication=" + yearFabrication + ", carVersion=" + carVersion + 
+                ", Person=" + Person + '}';
     }
+    
+    
+    
 }
