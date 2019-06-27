@@ -359,7 +359,7 @@ public class RegCarVersionView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExitActionPerformed
-        dispose();
+
     }//GEN-LAST:event_jButtonExitActionPerformed
 
     private void jTxtnNameVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtnNameVersionActionPerformed

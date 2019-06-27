@@ -241,7 +241,7 @@ public class RegCarModelView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExitActionPerformed
-        dispose();
+        
     }//GEN-LAST:event_jButtonExitActionPerformed
 
     private void jTxtModelNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtModelNameActionPerformed

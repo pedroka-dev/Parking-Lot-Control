@@ -1,6 +1,8 @@
 
 package view;
 
+import controller.ListCarBrandControl;
+
 public class MainMenuView extends javax.swing.JFrame {
     public MainMenuView() {
         initComponents();
@@ -382,17 +384,16 @@ public class MainMenuView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonListBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListBrandActionPerformed
-        ListCarBrandView screenListCarBrand = new ListCarBrandView();
-        screenListCarBrand.setVisible(true);
+        ListCarBrandView listCarBrandView = new ListCarBrandView();
         
-        //Instanciando um controller para screens de cadastro de marca e repassando a screen instanciada como parametro
-        //ControllerListCarBrand controllerListaCarBrand = new ControllerListCarBrand(screenListCarBrand);
-        
+        ListCarBrandControl ListCarBrand = new ListCarBrandControl(listCarBrandView);
+
+        listCarBrandView.setVisible(true);
     }//GEN-LAST:event_jButtonListBrandActionPerformed
 
     private void jButtonRegBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegBrandActionPerformed
-        RegCarBrandView screenCadCarBrand = new RegCarBrandView();
-        screenCadCarBrand.setVisible(true);
+        RegCarBrandView regCarBrandView = new RegCarBrandView();
+        regCarBrandView.setVisible(true);
         
         //Instanciando um controller para screens de cadastro de marca e repassando a screen instanciada como parametro
         //ControllerCadCarBrand controllerCadastroCarBrand = new ControllerCadCarBrand(screenCadCarBrand);
@@ -400,55 +401,56 @@ public class MainMenuView extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonRegBrandActionPerformed
 
     private void jButtonRegModelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegModelActionPerformed
-        RegCarModelView screenCadCarModel = new RegCarModelView();
-        screenCadCarModel.setVisible(true);
+        RegCarModelView regCarModelView = new RegCarModelView();
+        regCarModelView.setVisible(true);
     }//GEN-LAST:event_jButtonRegModelActionPerformed
 
     private void jButtonListModelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListModelActionPerformed
-        ListCarModelView screenListCarModel = new ListCarModelView();
-        screenListCarModel.setVisible(true);
+        ListCarModelView listCarModelView = new ListCarModelView();
+        listCarModelView.setVisible(true);
     }//GEN-LAST:event_jButtonListModelActionPerformed
 
     private void jButtonRegVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegVersionActionPerformed
-        RegCarVersionView screenCadCarVersion = new RegCarVersionView();
-        screenCadCarVersion.setVisible(true);
+        RegCarVersionView regCarVersionView = new RegCarVersionView();
+        regCarVersionView.setVisible(true);
     }//GEN-LAST:event_jButtonRegVersionActionPerformed
 
     private void jButtonListVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListVersionActionPerformed
-        ListCarVersionView screenListCarVersion = new ListCarVersionView();
-        screenListCarVersion.setVisible(true);
+        ListCarVersionView listCarVersionView = new ListCarVersionView();
+        listCarVersionView.setVisible(true);
     }//GEN-LAST:event_jButtonListVersionActionPerformed
 
     private void jButtonRegNaturalPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegNaturalPersonActionPerformed
-        RegNaturalPersonView screenCadNaturalPersonView = new RegNaturalPersonView();
-        screenCadNaturalPersonView.setVisible(true);
+        RegNaturalPersonView regNaturalPersonView = new RegNaturalPersonView();
+        regNaturalPersonView.setVisible(true);
     }//GEN-LAST:event_jButtonRegNaturalPersonActionPerformed
 
     private void jButtonListNaturalPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListNaturalPersonActionPerformed
-        ListNaturalPersonView screenListNaturalPerson = new ListNaturalPersonView();
-        screenListNaturalPerson.setVisible(true);
+        ListNaturalPersonView listNaturalPersonView = new ListNaturalPersonView();
+        listNaturalPersonView.setVisible(true);
     }//GEN-LAST:event_jButtonListNaturalPersonActionPerformed
 
     private void jButtonRegLegalPeopleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegLegalPeopleActionPerformed
-        RegLegalPersonView screenCadLegalPersonView = new RegLegalPersonView();
-        screenCadLegalPersonView.setVisible(true);
+        RegLegalPersonView regLegalPersonView = new RegLegalPersonView();
+        regLegalPersonView.setVisible(true);
     }//GEN-LAST:event_jButtonRegLegalPeopleActionPerformed
 
     private void jButtonListLegalPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListLegalPersonActionPerformed
-        ListLegalPersonView screenListLegalPerson = new ListLegalPersonView();
-        screenListLegalPerson.setVisible(true);
+        ListLegalPersonView listLegalPersonView = new ListLegalPersonView();
+        listLegalPersonView.setVisible(true);
     }//GEN-LAST:event_jButtonListLegalPersonActionPerformed
 
     private void jButtonRegVehicleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegVehicleActionPerformed
-        RegVehicleView screenRegVehicle = new RegVehicleView();
-        screenRegVehicle.setVisible(true);
+        RegVehicleView RegVehicleView = new RegVehicleView();
+        RegVehicleView.setVisible(true);
     }//GEN-LAST:event_jButtonRegVehicleActionPerformed
 
     private void jButtonListVehicleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListVehicleActionPerformed
-        ListVehicleView screenListVehicle = new ListVehicleView();
-        screenListVehicle.setVisible(true);
+        ListVehicleView listVehicleView = new ListVehicleView();
+        listVehicleView.setVisible(true);
     }//GEN-LAST:event_jButtonListVehicleActionPerformed
 
+    
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
