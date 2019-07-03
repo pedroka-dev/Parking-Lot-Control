@@ -491,13 +491,13 @@ public class MainMenuView extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonListVersionActionPerformed
 
     private void jButtonRegPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegPersonActionPerformed
-        RegPersonView regNaturalPersonView = new RegPersonView();
-        regNaturalPersonView.setVisible(true);
+        RegPersonView regPersonView = new RegPersonView();
+        regPersonView.setVisible(true);
     }//GEN-LAST:event_jButtonRegPersonActionPerformed
 
     private void jButtonListPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListPersonActionPerformed
-        ListPersonView listNaturalPersonView = new ListPersonView();
-        listNaturalPersonView.setVisible(true);
+        ListPersonView listPersonView = new ListPersonView();
+        listPersonView.setVisible(true);
     }//GEN-LAST:event_jButtonListPersonActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
