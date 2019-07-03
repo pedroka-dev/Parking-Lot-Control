@@ -59,6 +59,9 @@ public class RegVehicleView extends javax.swing.JFrame {
         this.jTxtnNumberPlate = jTxtnNumberPlate;
     }
 
+    public JTextField getjTxtEngineType() {
+        return jTxtEngineType;
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

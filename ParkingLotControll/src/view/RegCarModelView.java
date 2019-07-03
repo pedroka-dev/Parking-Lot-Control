@@ -30,6 +30,10 @@ public class RegCarModelView extends javax.swing.JFrame {
         return jTxtNameType;
     }
 
+    public JTextField getjTxtNameCategory() {
+        return jTxtNameCategory;
+    }
+
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
