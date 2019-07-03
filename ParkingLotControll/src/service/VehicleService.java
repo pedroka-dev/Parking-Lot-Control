@@ -17,7 +17,7 @@ public class VehicleService {
         return vehicleDAOSer.Retrieve(id);
     }
 
-    public static List<Vehicle> Buscar() {
+    public static List<Vehicle> Retrive() {
         VehicleDAOSer vehicleDAOSer = new VehicleDAOSer();
         return vehicleDAOSer.Retrieve();
     }

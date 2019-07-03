@@ -17,7 +17,7 @@ public class CarVersionService {
         return carVersionDAOSer.Retrieve(id);
     }
 
-    public static List<CarVersion> Buscar() {
+    public static List<CarVersion> Retrive() {
         CarVersionDAOSer carVersionDAOSer = new CarVersionDAOSer();
         return carVersionDAOSer.Retrieve();
     }
