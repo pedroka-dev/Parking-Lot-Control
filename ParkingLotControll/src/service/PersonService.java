@@ -17,7 +17,7 @@ public class PersonService {
         return personDAOSer.Retrieve(id);
     }
 
-    public static List<Person> Retrive() {
+    public static List<Person> Retrieve() {
         PersonDAOSer personDAOSer = new PersonDAOSer();
         return personDAOSer.Retrieve();
     }
