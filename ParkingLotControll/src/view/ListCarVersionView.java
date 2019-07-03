@@ -16,6 +16,11 @@ public class ListCarVersionView extends javax.swing.JFrame {
         return jButtonExit;
     }
     
+    public JButton getjButtonDelete() {
+        return jButtonDelete;
+    }
+    
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
