@@ -2,6 +2,10 @@
 package view;
 
 import controller.ListCarBrandControl;
+import controller.ListCarModelControl;
+import controller.ListCarVersionControl;
+import controller.ListPersonControl;
+import controller.ListVehicleControl;
 
 public class MainMenuView extends javax.swing.JFrame {
     public MainMenuView() {
@@ -22,16 +26,16 @@ public class MainMenuView extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jButtonRegBrand = new javax.swing.JButton();
-        jButtonListBrand = new javax.swing.JButton();
+        jButtonRegCarBrand = new javax.swing.JButton();
+        jButtonListCarBrand = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jButtonRegModel = new javax.swing.JButton();
-        jButtonListModel = new javax.swing.JButton();
+        jButtonRegCarModel = new javax.swing.JButton();
+        jButtonListCarModel = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        jButtonRegVersion = new javax.swing.JButton();
-        jButtonListVersion = new javax.swing.JButton();
+        jButtonRegCarVersion = new javax.swing.JButton();
+        jButtonListCarVersion = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jButtonRegPerson = new javax.swing.JButton();
@@ -44,20 +48,20 @@ public class MainMenuView extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jPanel3 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuList = new javax.swing.JMenu();
+        jMenuListCarBrand = new javax.swing.JMenuItem();
+        jMenuListCarModel = new javax.swing.JMenuItem();
+        jMenuListCarVersion = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuListPerson = new javax.swing.JMenuItem();
+        jMenuListVehicle = new javax.swing.JMenuItem();
+        jMenuReg = new javax.swing.JMenu();
+        jMenuRegCarBrand = new javax.swing.JMenuItem();
+        jMenuRegCarModel = new javax.swing.JMenuItem();
+        jMenuRegCarVersion = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuRegPerson = new javax.swing.JMenuItem();
+        jMenuRegVehicle = new javax.swing.JMenuItem();
 
         jLabel2.setText("jLabel2");
 
@@ -90,19 +94,19 @@ public class MainMenuView extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButtonRegBrand.setText("Register Brand");
-        jButtonRegBrand.setToolTipText("");
-        jButtonRegBrand.addActionListener(new java.awt.event.ActionListener() {
+        jButtonRegCarBrand.setText("Register Brand");
+        jButtonRegCarBrand.setToolTipText("");
+        jButtonRegCarBrand.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonRegBrandActionPerformed(evt);
+                jButtonRegCarBrandActionPerformed(evt);
             }
         });
 
-        jButtonListBrand.setText("List of Brands");
-        jButtonListBrand.setToolTipText("");
-        jButtonListBrand.addActionListener(new java.awt.event.ActionListener() {
+        jButtonListCarBrand.setText("List of Brands");
+        jButtonListCarBrand.setToolTipText("");
+        jButtonListCarBrand.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonListBrandActionPerformed(evt);
+                jButtonListCarBrandActionPerformed(evt);
             }
         });
 
@@ -116,8 +120,8 @@ public class MainMenuView extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel4)
-                    .addComponent(jButtonListBrand, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButtonRegBrand, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE))
+                    .addComponent(jButtonListCarBrand, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonRegCarBrand, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE))
                 .addGap(0, 25, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -125,25 +129,25 @@ public class MainMenuView extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonListBrand)
+                .addComponent(jButtonListCarBrand)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButtonRegBrand)
+                .addComponent(jButtonRegCarBrand)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButtonRegModel.setText("Register Model");
-        jButtonRegModel.setToolTipText("");
-        jButtonRegModel.addActionListener(new java.awt.event.ActionListener() {
+        jButtonRegCarModel.setText("Register Model");
+        jButtonRegCarModel.setToolTipText("");
+        jButtonRegCarModel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonRegModelActionPerformed(evt);
+                jButtonRegCarModelActionPerformed(evt);
             }
         });
 
-        jButtonListModel.setText("List of Models");
-        jButtonListModel.setToolTipText("");
-        jButtonListModel.addActionListener(new java.awt.event.ActionListener() {
+        jButtonListCarModel.setText("List of Models");
+        jButtonListCarModel.setToolTipText("");
+        jButtonListCarModel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonListModelActionPerformed(evt);
+                jButtonListCarModelActionPerformed(evt);
             }
         });
 
@@ -154,34 +158,34 @@ public class MainMenuView extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButtonRegModel, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+            .addComponent(jButtonRegCarModel, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
             .addComponent(jLabel5)
-            .addComponent(jButtonListModel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jButtonListCarModel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonListModel)
+                .addComponent(jButtonListCarModel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButtonRegModel)
+                .addComponent(jButtonRegCarModel)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButtonRegVersion.setText("Register Version");
-        jButtonRegVersion.setToolTipText("");
-        jButtonRegVersion.addActionListener(new java.awt.event.ActionListener() {
+        jButtonRegCarVersion.setText("Register Version");
+        jButtonRegCarVersion.setToolTipText("");
+        jButtonRegCarVersion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonRegVersionActionPerformed(evt);
+                jButtonRegCarVersionActionPerformed(evt);
             }
         });
 
-        jButtonListVersion.setText("List of Versions");
-        jButtonListVersion.setToolTipText("");
-        jButtonListVersion.addActionListener(new java.awt.event.ActionListener() {
+        jButtonListCarVersion.setText("List of Versions");
+        jButtonListCarVersion.setToolTipText("");
+        jButtonListCarVersion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonListVersionActionPerformed(evt);
+                jButtonListCarVersionActionPerformed(evt);
             }
         });
 
@@ -195,8 +199,8 @@ public class MainMenuView extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonListVersion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButtonRegVersion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButtonListCarVersion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonRegCarVersion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 25, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -204,9 +208,9 @@ public class MainMenuView extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonListVersion)
+                .addComponent(jButtonListCarVersion)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButtonRegVersion)
+                .addComponent(jButtonRegCarVersion)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -348,85 +352,90 @@ public class MainMenuView extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Parking lot", jPanel3);
 
-        jMenu1.setText("Lists");
+        jMenuList.setText("Lists");
 
-        jMenuItem1.setText("List of Vehicle Brands");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuListCarBrand.setText("List of Vehicle Brands");
+        jMenuListCarBrand.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuListCarBrandActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jMenuList.add(jMenuListCarBrand);
 
-        jMenuItem2.setText("List of Vehicle Models");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        jMenuListCarModel.setText("List of Vehicle Models");
+        jMenuListCarModel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                jMenuListCarModelActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        jMenuList.add(jMenuListCarModel);
 
-        jMenuItem3.setText("List of Vehicle Versions");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        jMenuListCarVersion.setText("List of Vehicle Versions");
+        jMenuListCarVersion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                jMenuListCarVersionActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem3);
-        jMenu1.add(jSeparator1);
+        jMenuList.add(jMenuListCarVersion);
+        jMenuList.add(jSeparator1);
 
-        jMenuItem4.setText("List of Owners");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        jMenuListPerson.setText("List of Owners");
+        jMenuListPerson.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                jMenuListPersonActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem4);
+        jMenuList.add(jMenuListPerson);
 
-        jMenuItem5.setText("List of Vehicles");
-        jMenu1.add(jMenuItem5);
+        jMenuListVehicle.setText("List of Vehicles");
+        jMenuList.add(jMenuListVehicle);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(jMenuList);
 
-        jMenu3.setText("Register");
+        jMenuReg.setText("Registration");
 
-        jMenuItem6.setText("Register Vehicle Brands");
-        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+        jMenuRegCarBrand.setText("Register Vehicle Brands");
+        jMenuRegCarBrand.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem6ActionPerformed(evt);
+                jMenuRegCarBrandActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem6);
+        jMenuReg.add(jMenuRegCarBrand);
 
-        jMenuItem7.setText("Register Vehicle Models");
-        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+        jMenuRegCarModel.setText("Register Vehicle Models");
+        jMenuRegCarModel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem7ActionPerformed(evt);
+                jMenuRegCarModelActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem7);
+        jMenuReg.add(jMenuRegCarModel);
 
-        jMenuItem8.setText("Register  Vehicle Versions");
-        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+        jMenuRegCarVersion.setText("Register  Vehicle Versions");
+        jMenuRegCarVersion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem8ActionPerformed(evt);
+                jMenuRegCarVersionActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem8);
-        jMenu3.add(jSeparator2);
+        jMenuReg.add(jMenuRegCarVersion);
+        jMenuReg.add(jSeparator2);
 
-        jMenuItem9.setText("Register Owners");
-        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+        jMenuRegPerson.setText("Register Owners");
+        jMenuRegPerson.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem9ActionPerformed(evt);
+                jMenuRegPersonActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem9);
+        jMenuReg.add(jMenuRegPerson);
 
-        jMenuItem10.setText("Register Vehicles");
-        jMenu3.add(jMenuItem10);
+        jMenuRegVehicle.setText("Register Vehicles");
+        jMenuRegVehicle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuRegVehicleActionPerformed(evt);
+            }
+        });
+        jMenuReg.add(jMenuRegVehicle);
 
-        jMenuBar1.add(jMenu3);
+        jMenuBar1.add(jMenuReg);
 
         setJMenuBar(jMenuBar1);
 
@@ -453,94 +462,109 @@ public class MainMenuView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonListBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListBrandActionPerformed
+    private void jButtonListCarBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListCarBrandActionPerformed
         ListCarBrandView listCarBrandView = new ListCarBrandView();
-        
-        ListCarBrandControl ListCarBrand = new ListCarBrandControl(listCarBrandView);
-
+        ListCarBrandControl listCarBrandControl = new ListCarBrandControl(listCarBrandView);
         listCarBrandView.setVisible(true);
-    }//GEN-LAST:event_jButtonListBrandActionPerformed
+    }//GEN-LAST:event_jButtonListCarBrandActionPerformed
 
-    private void jButtonRegBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegBrandActionPerformed
+    private void jButtonRegCarBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegCarBrandActionPerformed
         RegCarBrandView regCarBrandView = new RegCarBrandView();
+        //control
         regCarBrandView.setVisible(true);
-        
-        //Instanciando um controller para screens de cadastro de marca e repassando a screen instanciada como parametro
-        //ControllerCadCarBrand controllerCadastroCarBrand = new ControllerCadCarBrand(screenCadCarBrand);
-        
-    }//GEN-LAST:event_jButtonRegBrandActionPerformed
+    }//GEN-LAST:event_jButtonRegCarBrandActionPerformed
 
-    private void jButtonRegModelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegModelActionPerformed
+    private void jButtonRegCarModelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegCarModelActionPerformed
         RegCarModelView regCarModelView = new RegCarModelView();
+        //control
         regCarModelView.setVisible(true);
-    }//GEN-LAST:event_jButtonRegModelActionPerformed
+    }//GEN-LAST:event_jButtonRegCarModelActionPerformed
 
-    private void jButtonListModelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListModelActionPerformed
+    private void jButtonListCarModelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListCarModelActionPerformed
         ListCarModelView listCarModelView = new ListCarModelView();
+        ListCarModelControl listCarModelControl = new ListCarModelControl(listCarModelView);
         listCarModelView.setVisible(true);
-    }//GEN-LAST:event_jButtonListModelActionPerformed
+    }//GEN-LAST:event_jButtonListCarModelActionPerformed
 
-    private void jButtonRegVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegVersionActionPerformed
+    private void jButtonRegCarVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegCarVersionActionPerformed
         RegCarVersionView regCarVersionView = new RegCarVersionView();
+        //control
         regCarVersionView.setVisible(true);
-    }//GEN-LAST:event_jButtonRegVersionActionPerformed
+    }//GEN-LAST:event_jButtonRegCarVersionActionPerformed
 
-    private void jButtonListVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListVersionActionPerformed
+    private void jButtonListCarVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListCarVersionActionPerformed
         ListCarVersionView listCarVersionView = new ListCarVersionView();
+        ListCarVersionControl listCarVersionControl = new ListCarVersionControl(listCarVersionView);
         listCarVersionView.setVisible(true);
-    }//GEN-LAST:event_jButtonListVersionActionPerformed
+    }//GEN-LAST:event_jButtonListCarVersionActionPerformed
 
     private void jButtonRegPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegPersonActionPerformed
         RegPersonView regPersonView = new RegPersonView();
+        //control
         regPersonView.setVisible(true);
     }//GEN-LAST:event_jButtonRegPersonActionPerformed
 
     private void jButtonListPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListPersonActionPerformed
-        ListPersonView listPersonView = new ListPersonView();
+        ListPersonView listPersonView = new ListPersonView(); 
+        ListPersonControl listPersonControl = new ListPersonControl(listPersonView);
         listPersonView.setVisible(true);
     }//GEN-LAST:event_jButtonListPersonActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    private void jMenuListCarBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuListCarBrandActionPerformed
+        ListCarBrandView listCarBrandView = new ListCarBrandView();
+        ListCarBrandControl listCarBrandControl = new ListCarBrandControl(listCarBrandView);
+        listCarBrandView.setVisible(true);
+    }//GEN-LAST:event_jMenuListCarBrandActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    private void jMenuListCarVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuListCarVersionActionPerformed
+        ListCarVersionView listCarVersionView = new ListCarVersionView();
+        ListCarVersionControl listCarVersionControl = new ListCarVersionControl(listCarVersionView);
+        listCarVersionView.setVisible(true);
+    }//GEN-LAST:event_jMenuListCarVersionActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    private void jMenuListCarModelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuListCarModelActionPerformed
+        ListCarModelView listCarModelView = new ListCarModelView();
+        ListCarModelControl listCarModelControl = new ListCarModelControl(listCarModelView);
+        listCarModelView.setVisible(true);
+    }//GEN-LAST:event_jMenuListCarModelActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    private void jMenuListPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuListPersonActionPerformed
+        ListPersonView listPersonView = new ListPersonView(); 
+        ListPersonControl listPersonControl = new ListPersonControl(listPersonView);
+        listPersonView.setVisible(true);
+    }//GEN-LAST:event_jMenuListPersonActionPerformed
 
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+    private void jMenuRegCarBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuRegCarBrandActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
+    }//GEN-LAST:event_jMenuRegCarBrandActionPerformed
 
-    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+    private void jMenuRegCarModelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuRegCarModelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem7ActionPerformed
+    }//GEN-LAST:event_jMenuRegCarModelActionPerformed
 
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+    private void jMenuRegCarVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuRegCarVersionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
+    }//GEN-LAST:event_jMenuRegCarVersionActionPerformed
 
-    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+    private void jMenuRegPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuRegPersonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem9ActionPerformed
+    }//GEN-LAST:event_jMenuRegPersonActionPerformed
 
     private void jButtonListVehicleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListVehicleActionPerformed
         ListVehicleView listVehicleView = new ListVehicleView();
+        ListVehicleControl listVehicleControl = new ListVehicleControl(listVehicleView);
         listVehicleView.setVisible(true);
     }//GEN-LAST:event_jButtonListVehicleActionPerformed
 
     private void jButtonRegVehicleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegVehicleActionPerformed
         RegVehicleView RegVehicleView = new RegVehicleView();
+        //control
         RegVehicleView.setVisible(true);
     }//GEN-LAST:event_jButtonRegVehicleActionPerformed
+
+    private void jMenuRegVehicleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuRegVehicleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuRegVehicleActionPerformed
 
     
     public static void main(String args[]) {
@@ -552,16 +576,16 @@ public class MainMenuView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonListBrand;
-    private javax.swing.JButton jButtonListModel;
+    private javax.swing.JButton jButtonListCarBrand;
+    private javax.swing.JButton jButtonListCarModel;
+    private javax.swing.JButton jButtonListCarVersion;
     private javax.swing.JButton jButtonListPerson;
     private javax.swing.JButton jButtonListVehicle;
-    private javax.swing.JButton jButtonListVersion;
-    private javax.swing.JButton jButtonRegBrand;
-    private javax.swing.JButton jButtonRegModel;
+    private javax.swing.JButton jButtonRegCarBrand;
+    private javax.swing.JButton jButtonRegCarModel;
+    private javax.swing.JButton jButtonRegCarVersion;
     private javax.swing.JButton jButtonRegPerson;
     private javax.swing.JButton jButtonRegVehicle;
-    private javax.swing.JButton jButtonRegVersion;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -570,19 +594,19 @@ public class MainMenuView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JMenu jMenuList;
+    private javax.swing.JMenuItem jMenuListCarBrand;
+    private javax.swing.JMenuItem jMenuListCarModel;
+    private javax.swing.JMenuItem jMenuListCarVersion;
+    private javax.swing.JMenuItem jMenuListPerson;
+    private javax.swing.JMenuItem jMenuListVehicle;
+    private javax.swing.JMenu jMenuReg;
+    private javax.swing.JMenuItem jMenuRegCarBrand;
+    private javax.swing.JMenuItem jMenuRegCarModel;
+    private javax.swing.JMenuItem jMenuRegCarVersion;
+    private javax.swing.JMenuItem jMenuRegPerson;
+    private javax.swing.JMenuItem jMenuRegVehicle;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

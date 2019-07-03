@@ -31,95 +31,98 @@
     </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="jMenu1">
+        <Menu class="javax.swing.JMenu" name="jMenuList">
           <Properties>
             <Property name="text" type="java.lang.String" value="Lists"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuListCarBrand">
               <Properties>
                 <Property name="text" type="java.lang.String" value="List of Vehicle Brands"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuListCarBrandActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuListCarModel">
               <Properties>
                 <Property name="text" type="java.lang.String" value="List of Vehicle Models"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuListCarModelActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuListCarVersion">
               <Properties>
                 <Property name="text" type="java.lang.String" value="List of Vehicle Versions"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem3ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuListCarVersionActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuListPerson">
               <Properties>
                 <Property name="text" type="java.lang.String" value="List of Owners"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem4ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuListPersonActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuListVehicle">
               <Properties>
                 <Property name="text" type="java.lang.String" value="List of Vehicles"/>
               </Properties>
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu3">
+        <Menu class="javax.swing.JMenu" name="jMenuReg">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Register"/>
+            <Property name="text" type="java.lang.String" value="Registration"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuRegCarBrand">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Register Vehicle Brands"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem6ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuRegCarBrandActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuRegCarModel">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Register Vehicle Models"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem7ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuRegCarModelActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem8">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuRegCarVersion">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Register  Vehicle Versions"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem8ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuRegCarVersionActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuRegPerson">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Register Owners"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem9ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuRegPersonActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem10">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuRegVehicle">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Register Vehicles"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuRegVehicleActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -290,8 +293,8 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButtonListBrand" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jButtonRegBrand" alignment="0" pref="125" max="32767" attributes="0"/>
+                              <Component id="jButtonListCarBrand" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonRegCarBrand" alignment="0" pref="125" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="25" max="32767" attributes="0"/>
                       </Group>
@@ -302,31 +305,31 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButtonListBrand" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonListCarBrand" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jButtonRegBrand" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonRegCarBrand" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JButton" name="jButtonRegBrand">
+                <Component class="javax.swing.JButton" name="jButtonRegCarBrand">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Register Brand"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonRegBrandActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonRegCarBrandActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButtonListBrand">
+                <Component class="javax.swing.JButton" name="jButtonListCarBrand">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="List of Brands"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonListBrandActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonListCarBrandActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel4">
@@ -344,9 +347,9 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButtonRegModel" alignment="0" pref="125" max="32767" attributes="0"/>
+                      <Component id="jButtonRegCarModel" alignment="0" pref="125" max="32767" attributes="0"/>
                       <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButtonListModel" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButtonListCarModel" alignment="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -354,31 +357,31 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButtonListModel" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonListCarModel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jButtonRegModel" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonRegCarModel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JButton" name="jButtonRegModel">
+                <Component class="javax.swing.JButton" name="jButtonRegCarModel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Register Model"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonRegModelActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonRegCarModelActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButtonListModel">
+                <Component class="javax.swing.JButton" name="jButtonListCarModel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="List of Models"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonListModelActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonListCarModelActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel5">
@@ -399,8 +402,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButtonListVersion" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jButtonRegVersion" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonListCarVersion" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonRegCarVersion" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="25" max="32767" attributes="0"/>
                       </Group>
@@ -411,31 +414,31 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel6" min="-2" pref="17" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButtonListVersion" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonListCarVersion" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jButtonRegVersion" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonRegCarVersion" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JButton" name="jButtonRegVersion">
+                <Component class="javax.swing.JButton" name="jButtonRegCarVersion">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Register Version"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonRegVersionActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonRegCarVersionActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButtonListVersion">
+                <Component class="javax.swing.JButton" name="jButtonListCarVersion">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="List of Versions"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonListVersionActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonListCarVersionActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel6">
