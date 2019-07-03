@@ -2,6 +2,7 @@
 package model.bo;
 
 public class CarVersion {       //car version (e.g. Z/28). One version can have many existing vehicles. 
+    private int id;
     private String nameVersion;
     private String typeFuel;
     private int numberSeats;
@@ -13,9 +14,9 @@ public class CarVersion {       //car version (e.g. Z/28). One version can have 
     public String nameToString() {       //is used to show the entire name of the vehicle. 
         return carModel.nameToString() + " " + nameVersion;       //returns "BrandX ModelY VersionZ"
     }
-    
 
-    public CarVersion(String nameVersion, String typeFuel, int numberSeats, boolean hasBrakeAbs, boolean hasTransAuto, CarModel carModel) {
+    public CarVersion(int id, String nameVersion, String typeFuel, int numberSeats, boolean hasBrakeAbs, boolean hasTransAuto, CarModel carModel) {
+        this.id = id;
         this.nameVersion = nameVersion;
         this.typeFuel = typeFuel;
         this.numberSeats = numberSeats;
@@ -29,6 +30,14 @@ public class CarVersion {       //car version (e.g. Z/28). One version can have 
     }
 
     
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNameVersion() {
         return nameVersion;
     }

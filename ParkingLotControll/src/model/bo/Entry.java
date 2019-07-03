@@ -2,20 +2,30 @@
 package model.bo;
 
 public class Entry {
+    private int id;
     private String dateEntry;
     private String hourEntry;
 
     
-    public Entry(String dateEntry, String hourEntry) {
+    public Entry(int id, String dateEntry, String hourEntry) {
+        this.id = id;
         this.dateEntry = dateEntry;
         this.hourEntry = hourEntry;
     }
-    
+
     public Entry(){
         
     }
 
     
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getDateEntry() {
         return dateEntry;
     }

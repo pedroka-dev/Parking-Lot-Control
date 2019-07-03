@@ -2,6 +2,7 @@
 package model.bo;
 
 public class Vehicle {
+    private int id;
     private String nameColor;
     private String numberPlate;
     private String engineType;      //(e.g. 1.0, 1.5)
@@ -9,7 +10,9 @@ public class Vehicle {
     private CarVersion carVersion;
     private Person Person;
 
-    public Vehicle(String nameColor, String numberPlate, String engineType, int yearFabrication, CarVersion carVersion, Person Person) {
+    
+    public Vehicle(int id, String nameColor, String numberPlate, String engineType, int yearFabrication, CarVersion carVersion, Person Person) {
+        this.id = id;
         this.nameColor = nameColor;
         this.numberPlate = numberPlate;
         this.engineType = engineType;
@@ -20,6 +23,14 @@ public class Vehicle {
 
     public Vehicle() {
         
+    }
+    
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
     
     public String getNameColor() {

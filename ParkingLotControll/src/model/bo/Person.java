@@ -1,7 +1,8 @@
 
 package model.bo;
 
-public class Person {      //Registered owner of a vehicle   
+public class Person {      //Registered owner of a vehicle
+    private int id;
     private String name;
     private String email;
     private String adress;
@@ -10,7 +11,9 @@ public class Person {      //Registered owner of a vehicle
     private int numberCpf;
     private int phone;
 
-    public Person(String name, String email, String adress, String numberRg, String numberCnh, int numberCpf, int phone) {
+    
+    public Person(int id, String name, String email, String adress, String numberRg, String numberCnh, int numberCpf, int phone) {
+        this.id = id;
         this.name = name;
         this.email = email;
         this.adress = adress;
@@ -19,12 +22,20 @@ public class Person {      //Registered owner of a vehicle
         this.numberCpf = numberCpf;
         this.phone = phone;
     }
-    
+
     public Person() {
         
     }
 
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
     public String getName() {
         return name;
     }

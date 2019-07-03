@@ -2,6 +2,7 @@
 package model.bo;   
 
 public class CarModel {     //car model (e.g: Camaro). One model can have many car version. Please do not confuse with "model.x" java packages
+    private int id;
     private String nameModel;
     private String nameType;        //(e.g: Sedan, SUV, Pick-up)
     private String nameCategory;    //(e.g: A, B)
@@ -11,19 +12,27 @@ public class CarModel {     //car model (e.g: Camaro). One model can have many c
     public String nameToString() {       //is used to show the entire name of the vehicle. 
         return carBrand.nameToString() + " " + nameModel;       //returns "BrandX ModelY"
     }
-    
-    
-    public CarModel(String nameModel, String nameType, String nameCategory, CarBrand carBrand) {
+
+    public CarModel(int id, String nameModel, String nameType, String nameCategory, CarBrand carBrand) {
+        this.id = id;
         this.nameModel = nameModel;
         this.nameType = nameType;
         this.nameCategory = nameCategory;
         this.carBrand = carBrand;
     }
-
+    
     public CarModel() {
         
     }
 
+    
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     
     public String getNameModel() {
         return nameModel;
