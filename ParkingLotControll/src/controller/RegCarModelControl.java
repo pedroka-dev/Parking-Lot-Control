@@ -3,6 +3,8 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
+import model.bo.CarBrand;
 import model.bo.CarModel;
 import service.CarModelService;
 import view.RegCarModelView;
@@ -18,6 +20,10 @@ public class RegCarModelControl implements ActionListener {
 
         this.regCarModelView.getjButtonSave().addActionListener(this);
         this.regCarModelView.getjButtonExit().addActionListener(this);
+        
+        for (CarBrand carBrandInstance : service.CarBrandService.Retrieve()) { 
+            regCarModelView.getjComboCarBrand().addItem( carBrandInstance.getNameBrand() );
+        }   
     }
     
     @Override
@@ -33,9 +39,19 @@ public class RegCarModelControl implements ActionListener {
             } else {
                 carModel.setId(1);
             }
+            
+            
+            if(this.regCarModelView.getjComboCarBrand().getSelectedIndex() == 0){  //check if the option is valid
+               JOptionPane.showMessageDialog(null,"Please Select an already registered 'Brand'");
+               return;      //stops the function actionPerformed
+            }
+            else{
+                carModel.setCarBrand(service.CarBrandService.Retrieve(this.regCarModelView.getjComboCarBrand().getSelectedIndex()-1));
+                //sets CarBrand based on the index of the combobox - 1
+            }
+            
             carModel.setNameModel(this.regCarModelView.getjTxtModelName().getText());
             carModel.setNameCategory(this.regCarModelView.getjTxtNameCategory().getText());
-            //carModel.setCarBrand(this.regCarModelView.getjComboCarBrand().getSelectedItem());
             carModel.setNameType(this.regCarModelView.getjTxtNameType().getText());
             service.CarModelService.Create(carModel);
         } 

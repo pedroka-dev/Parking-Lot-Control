@@ -4,6 +4,8 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+import model.bo.CarVersion;
+import model.bo.Person;
 import model.bo.Vehicle;
 import service.VehicleService;
 import view.RegVehicleView;
@@ -19,6 +21,14 @@ public class RegVehicleControl implements ActionListener {
 
         this.regVehicleView.getjButtonSave().addActionListener(this);
         this.regVehicleView.getjButtonExit().addActionListener(this);
+        
+        for (CarVersion carVersionInstance : service.CarVersionService.Retrieve()) { 
+            regVehicleView.getjComboCarVersion().addItem( carVersionInstance.getNameVersion());
+        }
+        
+        for (Person personInstance : service.PersonService.Retrieve()) { 
+            regVehicleView.getjComboOwner().addItem( personInstance.getName());
+        }
     }
     
     @Override
@@ -43,12 +53,28 @@ public class RegVehicleControl implements ActionListener {
                return;      //stops the function actionPerformed
             }
             
+            if(this.regVehicleView.getjComboOwner().getSelectedIndex() == 0){  //check if the option is valid
+               JOptionPane.showMessageDialog(null,"Please Select an already registered 'Owner/Person'");
+               return;      //stops the function actionPerformed
+            }
+            else{
+                vehicle.setPerson(service.PersonService.Retrieve(this.regVehicleView.getjComboOwner().getSelectedIndex()-1));
+                //sets CarBrand based on the index of the combobox - 1
+            }
+            
+            if(this.regVehicleView.getjComboCarVersion().getSelectedIndex() == 0){  //check if the option is valid
+               JOptionPane.showMessageDialog(null,"Please Select an already registered 'Version'");
+               return;      //stops the function actionPerformed
+            }
+            else{
+                vehicle.setCarVersion(service.CarVersionService.Retrieve(this.regVehicleView.getjComboCarVersion().getSelectedIndex()-1));
+                //sets CarBrand based on the index of the combobox - 1
+            }
+            
             vehicle.setNumberPlate(this.regVehicleView.getjTxtnNumberPlate().getText());
             vehicle.setEngineType(this.regVehicleView.getjTxtEngineType().getText());
             vehicle.setNameColor(this.regVehicleView.getjTxtNameColor().getText());
             vehicle.setYearFabrication(Integer.parseInt(this.regVehicleView.getjTxtYearFabrication().getText()));
-            //vehicle.setPerson(this.regVehicleView.getjComboOwner().getSelectedItem());
-            //vehicle.setCarVersion(this.regVehicleView.getjComboCarVersion().getSelectedItem());
             service.VehicleService.Create(vehicle);
         } 
         else if (e.getSource() == this.regVehicleView.getjButtonExit()) {

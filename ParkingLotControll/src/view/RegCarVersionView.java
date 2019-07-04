@@ -152,9 +152,9 @@ public class RegCarVersionView extends javax.swing.JFrame {
         jPanel6.setPreferredSize(new java.awt.Dimension(217, 57));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel6.setText("Brand and Model:");
+        jLabel6.setText("Version's Model:");
 
-        jComboCarModel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboCarModel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None" }));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -164,7 +164,7 @@ public class RegCarVersionView extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel6)
-                        .addGap(0, 83, Short.MAX_VALUE))
+                        .addGap(0, 96, Short.MAX_VALUE))
                     .addComponent(jComboCarModel, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );

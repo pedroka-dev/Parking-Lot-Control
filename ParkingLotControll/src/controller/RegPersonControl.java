@@ -4,6 +4,7 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+import model.bo.CarVersion;
 import model.bo.Person;
 import service.PersonService;
 import view.RegPersonView;
@@ -19,6 +20,7 @@ public class RegPersonControl implements ActionListener {
 
         this.regPersonView.getjButtonSave().addActionListener(this);
         this.regPersonView.getjButtonExit().addActionListener(this);
+
     }
     
     @Override
