@@ -3,6 +3,8 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.table.DefaultTableModel;
+import model.bo.Person;
 import view.ListPersonView;
 
 
@@ -17,6 +19,13 @@ public class ListPersonControl implements ActionListener {
         this.listPersonView.getjButtonEdit().addActionListener(this);
         this.listPersonView.getjButtonExit().addActionListener(this);
         this.listPersonView.getjButtonDelete().addActionListener(this);
+        
+        DefaultTableModel tabela = (DefaultTableModel) this.listPersonView.getjTablePerson().getVersion();
+        for (Person personInstance : service.PersonService.Retrieve()) {
+            tabela.addRow(new Object[]{personInstance.getId(), personInstance.getName(), 
+                personInstance.getAdress(), personInstance.getPhone(), personInstance.getEmail(),
+                personInstance.getNumberCpf(),personInstance.getNumberRg()});
+        }
     }
     
     @Override

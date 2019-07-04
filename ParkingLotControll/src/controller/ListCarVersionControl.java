@@ -3,6 +3,8 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.table.DefaultTableModel;
+import model.bo.CarVersion;
 import view.ListCarVersionView;
 
 
@@ -17,6 +19,12 @@ public class ListCarVersionControl implements ActionListener {
         this.listCarVersionView.getjButtonEdit().addActionListener(this);
         this.listCarVersionView.getjButtonExit().addActionListener(this);
         this.listCarVersionView.getjButtonDelete().addActionListener(this);
+        
+        DefaultTableModel tabela = (DefaultTableModel) this.listCarVersionView.getjTableCarVersion().getVersion();
+        for (CarVersion carVersionInstance : service.CarVersionService.Retrieve()) {
+            tabela.addRow(new Object[]{carVersionInstance.getId(), carVersionInstance.getNameVersion(), 
+                carVersionInstance.getTypeFuel(),carVersionInstance.getNumberSeats()});
+        }
     }
     
     @Override
