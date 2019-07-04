@@ -11,7 +11,7 @@ import model.bo.Exit;
 
 public class ExitDAOSer implements InterfaceDAOSer<Exit> {
 
-    public static final String archiveSerialization = "C:\\Users\\Bleyc\\Documents\\SerializeExit.ser";
+    public static final String archiveSerialization = ".\\SerializeExit.ser";
 
     @Override
     public void Create(Exit object) {

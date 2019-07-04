@@ -11,6 +11,7 @@ import controller.ListVehicleControl;
 import controller.RegCarBrandControl;
 import controller.RegCarModelControl;
 import controller.RegCarVersionControl;
+import controller.RegEntryExitControl;
 import controller.RegPersonControl;
 import controller.RegVehicleControl;
 
@@ -688,7 +689,7 @@ public class MainMenuView extends javax.swing.JFrame {
 
     private void jButtonRegEntryExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegEntryExitActionPerformed
         RegEntryExitView regEntryExitView = new RegEntryExitView();
-        //RegEntryExitControl regEntryExitControl = new RegEntryExitControl();
+        RegEntryExitControl regEntryExitControl = new RegEntryExitControl(regEntryExitView);
         regEntryExitView.setVisible(true);
     }//GEN-LAST:event_jButtonRegEntryExitActionPerformed
 

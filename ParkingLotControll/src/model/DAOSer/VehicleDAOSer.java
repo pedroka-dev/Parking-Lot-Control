@@ -11,7 +11,7 @@ import model.bo.Vehicle;
 
 public class VehicleDAOSer implements InterfaceDAOSer<Vehicle> {
 
-    public static final String archiveSerialization = "C:\\Users\\Bleyc\\Documents\\SerializeVehicle.ser";
+    public static final String archiveSerialization = ".\\SerializeVehicle.ser";
 
     @Override
     public void Create(Vehicle object) {
@@ -65,12 +65,20 @@ public class VehicleDAOSer implements InterfaceDAOSer<Vehicle> {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        int indiceVehicle = listVehicles.indexOf(id);
+        for(int i =0; i< Retrieve().size(); i++){
+            if(Retrieve().get(i).getId() == id){
+                return Retrieve().get(i);
+            }
+        }
+        
+        
+        /*int indiceVehicle = listVehicles.indexOf(id);
         if (indiceVehicle != -1) {
             return listVehicles.get(indiceVehicle);
         } else {
             return null;
-        }
+        }*/
+        return null;
 
     }
 

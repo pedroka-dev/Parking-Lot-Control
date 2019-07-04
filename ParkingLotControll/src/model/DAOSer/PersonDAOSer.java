@@ -11,7 +11,7 @@ import model.bo.Person;
 
 public class PersonDAOSer implements InterfaceDAOSer<Person> {
 
-    public static final String archiveSerialization = "C:\\Users\\Bleyc\\Documents\\SerializePerson.ser";
+    public static final String archiveSerialization = ".\\SerializePerson.ser";
 
     @Override
     public void Create(Person object) {

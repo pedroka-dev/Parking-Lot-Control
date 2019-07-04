@@ -11,7 +11,7 @@ import model.bo.Entry;
 
 public class EntryDAOSer implements InterfaceDAOSer<Entry> {
 
-    public static final String archiveSerialization = "C:\\Users\\Bleyc\\Documents\\SerializeEntry.ser";
+    public static final String archiveSerialization = ".\\SerializeEntry.ser";
 
     @Override
     public void Create(Entry object) {
