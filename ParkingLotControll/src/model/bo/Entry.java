@@ -5,12 +5,13 @@ import java.io.Serializable;
 
 public class Entry implements Serializable{
     private int id;
+    private String numberPlate;
     private String dateEntry;
     private String hourEntry;
 
-    
-    public Entry(int id, String dateEntry, String hourEntry) {
+    public Entry(int id, String numberPlate, String dateEntry, String hourEntry) {
         this.id = id;
+        this.numberPlate = numberPlate;
         this.dateEntry = dateEntry;
         this.hourEntry = hourEntry;
     }
@@ -19,7 +20,14 @@ public class Entry implements Serializable{
         
     }
 
-    
+    public String getNumberPlate() {
+        return numberPlate;
+    }
+
+    public void setNumberPlate(String numberPlate) {
+        this.numberPlate = numberPlate;
+    }
+
     public int getId() {
         return id;
     }

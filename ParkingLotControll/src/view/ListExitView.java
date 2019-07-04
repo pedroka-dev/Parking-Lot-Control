@@ -4,22 +4,22 @@ package view;
 import javax.swing.JButton;
 import javax.swing.JTable;
 
-public class ListParkedVehiclesView extends javax.swing.JFrame {
-    public ListParkedVehiclesView() {
+public class ListExitView extends javax.swing.JFrame {
+    public ListExitView() {
         initComponents();
     }
 
-    public JTable getjTableVehicles() {
-        return jTableVehicles;
+    public JTable getjTableExit() {
+        return jTableExit;
     }
 
-    public JButton getjButtonClear() {
-        return jButtonClear;
-    }
+    
 
     public JButton getjButtonExit() {
         return jButtonExit;
     }
+
+    
     
 
 
@@ -28,22 +28,14 @@ public class ListParkedVehiclesView extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButtonClear = new javax.swing.JButton();
         jButtonExit = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTableVehicles = new javax.swing.JTable();
+        jTableExit = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
-
-        jButtonClear.setText("Clear");
-        jButtonClear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonClearActionPerformed(evt);
-            }
-        });
 
         jButtonExit.setText("Exit");
         jButtonExit.addActionListener(new java.awt.event.ActionListener() {
@@ -52,23 +44,23 @@ public class ListParkedVehiclesView extends javax.swing.JFrame {
             }
         });
 
-        jTableVehicles.setModel(new javax.swing.table.DefaultTableModel(
+        jTableExit.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "ID", "Plate", "Color", "Engine ", "Fab. Year"
+                "ID", "Plate"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, true
+                false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTableVehicles);
+        jScrollPane1.setViewportView(jTableExit);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -78,8 +70,7 @@ public class ListParkedVehiclesView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButtonClear)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButtonExit))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -91,9 +82,7 @@ public class ListParkedVehiclesView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 334, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonClear)
-                    .addComponent(jButtonExit))
+                .addComponent(jButtonExit)
                 .addContainerGap())
         );
 
@@ -102,7 +91,7 @@ public class ListParkedVehiclesView extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("List of Parked Vehicles");
+        jLabel1.setText("Exit log");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -145,26 +134,21 @@ public class ListParkedVehiclesView extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButtonExitActionPerformed
 
-    private void jButtonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonClearActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonClearActionPerformed
-
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ListParkedVehiclesView().setVisible(true);
+                new ListExitView().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonClear;
     private javax.swing.JButton jButtonExit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTableVehicles;
+    private javax.swing.JTable jTableExit;
     // End of variables declaration//GEN-END:variables
 }

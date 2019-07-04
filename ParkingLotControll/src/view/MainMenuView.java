@@ -4,6 +4,8 @@ package view;
 import controller.ListCarBrandControl;
 import controller.ListCarModelControl;
 import controller.ListCarVersionControl;
+import controller.ListEntryControl;
+import controller.ListExitControl;
 import controller.ListPersonControl;
 import controller.ListVehicleControl;
 import controller.RegCarBrandControl;
@@ -56,8 +58,8 @@ public class MainMenuView extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jButtonRegEntryExit = new javax.swing.JButton();
         jButtonParkedVehicles = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jButtonListEntry = new javax.swing.JButton();
+        jButtonListExit = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuList = new javax.swing.JMenu();
@@ -375,19 +377,19 @@ public class MainMenuView extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton3.setText("Entry log");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButtonListEntry.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButtonListEntry.setText("Entry log");
+        jButtonListEntry.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButtonListEntryActionPerformed(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setText("Exit log");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jButtonListExit.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButtonListExit.setText("Exit log");
+        jButtonListExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jButtonListExitActionPerformed(evt);
             }
         });
 
@@ -404,9 +406,9 @@ public class MainMenuView extends javax.swing.JFrame {
                         .addGap(23, 23, 23)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButtonListEntry, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jButtonListExit, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jButtonParkedVehicles, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jButtonRegEntryExit, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -426,8 +428,8 @@ public class MainMenuView extends javax.swing.JFrame {
                 .addComponent(jButtonParkedVehicles, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonListEntry, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonListExit, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -685,20 +687,28 @@ public class MainMenuView extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuListVehicleActionPerformed
 
     private void jButtonRegEntryExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegEntryExitActionPerformed
-        // TODO add your handling code here:
+        RegEntryExitView regEntryExitView = new RegEntryExitView();
+        //RegEntryExitControl regEntryExitControl = new RegEntryExitControl();
+        regEntryExitView.setVisible(true);
     }//GEN-LAST:event_jButtonRegEntryExitActionPerformed
 
     private void jButtonParkedVehiclesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonParkedVehiclesActionPerformed
-        // TODO add your handling code here:
+        ListParkedVehiclesView listParkedVehiclesView = new ListParkedVehiclesView();
+        //ListParkedVehiclesControl listParkedVehiclesControl = new ListParkedVehiclesControl();
+        listParkedVehiclesView.setVisible(true);
     }//GEN-LAST:event_jButtonParkedVehiclesActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void jButtonListEntryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListEntryActionPerformed
+        ListEntryView listEntryView = new ListEntryView();
+        ListEntryControl listEntryControl = new ListEntryControl(listEntryView);
+        listEntryView.setVisible(true);
+    }//GEN-LAST:event_jButtonListEntryActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void jButtonListExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListExitActionPerformed
+        ListExitView listExitView = new ListExitView();
+        ListExitControl listExitControl = new ListExitControl(listExitView);
+        listExitView.setVisible(true);
+    }//GEN-LAST:event_jButtonListExitActionPerformed
 
     
     public static void main(String args[]) {
@@ -710,11 +720,11 @@ public class MainMenuView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButtonListCarBrand;
     private javax.swing.JButton jButtonListCarModel2;
     private javax.swing.JButton jButtonListCarVersion;
+    private javax.swing.JButton jButtonListEntry;
+    private javax.swing.JButton jButtonListExit;
     private javax.swing.JButton jButtonListPerson;
     private javax.swing.JButton jButtonListVehicle;
     private javax.swing.JButton jButtonParkedVehicles;
