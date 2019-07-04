@@ -1,7 +1,9 @@
 
 package model.bo;
 
-public class CarBrand {   //car brand (e.g: Ford). One brand can have many car models
+import java.io.Serializable;
+
+public class CarBrand implements Serializable {   //car brand (e.g: Ford). One brand can have many car models
     private int id;
     private String nameBrand;
 

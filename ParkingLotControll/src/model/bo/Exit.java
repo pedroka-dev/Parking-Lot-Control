@@ -1,7 +1,9 @@
 
 package model.bo;
 
-public class Exit {
+import java.io.Serializable;
+
+public class Exit implements Serializable {
     private int id;
     private String dateExit;
     private String hourExit;

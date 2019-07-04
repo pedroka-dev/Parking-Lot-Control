@@ -1,7 +1,9 @@
 
 package model.bo;   
 
-public class CarModel {     //car model (e.g: Camaro). One model can have many car version. Please do not confuse with "model.x" java packages
+import java.io.Serializable;
+
+public class CarModel implements Serializable {     //car model (e.g: Camaro). One model can have many car version. Please do not confuse with "model.x" java packages
     private int id;
     private String nameModel;
     private String nameType;        //(e.g: Sedan, SUV, Pick-up)

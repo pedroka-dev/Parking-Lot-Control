@@ -1,7 +1,9 @@
 
 package model.bo;
 
-public class Person {      //Registered owner of a vehicle
+import java.io.Serializable;
+
+public class Person  implements Serializable{      //Registered owner of a vehicle
     private int id;
     private String name;
     private String email;

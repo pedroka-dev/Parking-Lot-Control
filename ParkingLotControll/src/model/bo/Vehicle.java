@@ -1,7 +1,9 @@
 
 package model.bo;
 
-public class Vehicle {
+import java.io.Serializable;
+
+public class Vehicle implements Serializable{
     private int id;
     private String nameColor;
     private String numberPlate;

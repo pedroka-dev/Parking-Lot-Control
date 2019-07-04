@@ -1,7 +1,9 @@
 
 package model.bo;
 
-public class CarVersion {       //car version (e.g. Z/28). One version can have many existing vehicles. 
+import java.io.Serializable;
+
+public class CarVersion implements Serializable {       //car version (e.g. Z/28). One version can have many existing vehicles. 
     private int id;
     private String nameVersion;
     private String typeFuel;

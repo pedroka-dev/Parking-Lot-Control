@@ -1,7 +1,9 @@
 
 package model.bo;
 
-public class Entry {
+import java.io.Serializable;
+
+public class Entry implements Serializable{
     private int id;
     private String dateEntry;
     private String hourEntry;
