@@ -44,32 +44,29 @@ public class ListPersonView extends javax.swing.JFrame {
 
         jTablePerson.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Name", "Email", "RG", "Address"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, true, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTablePerson.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jTablePerson);
+        if (jTablePerson.getColumnModel().getColumnCount() > 0) {
+            jTablePerson.getColumnModel().getColumn(0).setResizable(false);
+            jTablePerson.getColumnModel().getColumn(1).setResizable(false);
+            jTablePerson.getColumnModel().getColumn(2).setResizable(false);
+            jTablePerson.getColumnModel().getColumn(3).setResizable(false);
+            jTablePerson.getColumnModel().getColumn(4).setResizable(false);
+        }
 
         jButtonEdit.setText("Edit");
         jButtonEdit.addActionListener(new java.awt.event.ActionListener() {

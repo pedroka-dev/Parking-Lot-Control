@@ -43,32 +43,27 @@ public class ListVehicleView extends javax.swing.JFrame {
 
         jTableVehicles.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Plate", "Color", "Engine ", "Fab. Year"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(jTableVehicles);
+        if (jTableVehicles.getColumnModel().getColumnCount() > 0) {
+            jTableVehicles.getColumnModel().getColumn(0).setResizable(false);
+            jTableVehicles.getColumnModel().getColumn(1).setResizable(false);
+            jTableVehicles.getColumnModel().getColumn(2).setResizable(false);
+            jTableVehicles.getColumnModel().getColumn(3).setResizable(false);
+        }
 
         jButtonEdit.setText("Edit");
         jButtonEdit.addActionListener(new java.awt.event.ActionListener() {

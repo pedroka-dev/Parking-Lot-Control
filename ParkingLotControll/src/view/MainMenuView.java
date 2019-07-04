@@ -390,6 +390,11 @@ public class MainMenuView extends javax.swing.JFrame {
         jMenuList.add(jMenuListPerson);
 
         jMenuListVehicle.setText("List of Vehicles");
+        jMenuListVehicle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuListVehicleActionPerformed(evt);
+            }
+        });
         jMenuList.add(jMenuListVehicle);
 
         jMenuBar1.add(jMenuList);
@@ -577,6 +582,12 @@ public class MainMenuView extends javax.swing.JFrame {
         regCarModelView.setVisible(true);
     }//GEN-LAST:event_jButtonRegCarModelActionPerformed
 
+    private void jMenuListVehicleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuListVehicleActionPerformed
+        ListVehicleView listVehicleView = new ListVehicleView();
+        ListVehicleControl listVehicleControl = new ListVehicleControl(listVehicleView);
+        listVehicleView.setVisible(true);
+    }//GEN-LAST:event_jMenuListVehicleActionPerformed
+
     
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -588,15 +599,11 @@ public class MainMenuView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonListCarBrand;
-    private javax.swing.JButton jButtonListCarModel;
-    private javax.swing.JButton jButtonListCarModel1;
     private javax.swing.JButton jButtonListCarModel2;
     private javax.swing.JButton jButtonListCarVersion;
     private javax.swing.JButton jButtonListPerson;
     private javax.swing.JButton jButtonListVehicle;
     private javax.swing.JButton jButtonRegCarBrand;
-    private javax.swing.JButton jButtonRegCarModel;
-    private javax.swing.JButton jButtonRegCarModel1;
     private javax.swing.JButton jButtonRegCarModel2;
     private javax.swing.JButton jButtonRegCarVersion;
     private javax.swing.JButton jButtonRegPerson;
@@ -606,10 +613,8 @@ public class MainMenuView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuList;
@@ -629,10 +634,8 @@ public class MainMenuView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JPopupMenu.Separator jSeparator1;

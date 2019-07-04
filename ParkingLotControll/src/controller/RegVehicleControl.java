@@ -37,8 +37,8 @@ public class RegVehicleControl implements ActionListener {
             vehicle.setEngineType(this.regVehicleView.getjTxtEngineType().getText());
             vehicle.setNameColor(this.regVehicleView.getjTxtNameColor().getText());
             vehicle.setYearFabrication(Integer.parseInt(this.regVehicleView.getjTxtYearFabrication().getText())); //possible error
-            vehicle.setPerson(this.regVehicleView.getjComboOwner().getSelectedItem());
-            vehicle.setCarVersion(this.regVehicleView.getjComboCarVersion().getSelectedItem());
+            //vehicle.setPerson(this.regVehicleView.getjComboOwner().getSelectedItem());
+            //vehicle.setCarVersion(this.regVehicleView.getjComboCarVersion().getSelectedItem());
             service.VehicleService.Create(vehicle);
         } 
         else if (e.getSource() == this.regVehicleView.getjButtonExit()) {

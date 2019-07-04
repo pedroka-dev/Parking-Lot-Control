@@ -35,7 +35,7 @@ public class RegCarModelControl implements ActionListener {
             }
             carModel.setNameModel(this.regCarModelView.getjTxtModelName().getText());
             carModel.setNameCategory(this.regCarModelView.getjTxtNameCategory().getText());
-            carModel.setCarBrand(this.regCarModelView.getjComboCarBrand().getSelectedItem());
+            //carModel.setCarBrand(this.regCarModelView.getjComboCarBrand().getSelectedItem());
             carModel.setNameType(this.regCarModelView.getjTxtNameType().getText());
             service.CarModelService.Create(carModel);
         } 

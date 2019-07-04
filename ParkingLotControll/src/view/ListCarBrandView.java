@@ -48,32 +48,26 @@ public class ListCarBrandView extends javax.swing.JFrame {
 
         jTableCarBrand.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Brand Name"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTableCarBrand.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jTableCarBrand);
+        if (jTableCarBrand.getColumnModel().getColumnCount() > 0) {
+            jTableCarBrand.getColumnModel().getColumn(0).setResizable(false);
+            jTableCarBrand.getColumnModel().getColumn(1).setResizable(false);
+        }
 
         jButtonEdit.setText("Edit");
         jButtonEdit.addActionListener(new java.awt.event.ActionListener() {

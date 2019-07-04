@@ -44,32 +44,28 @@ public class ListCarModelView extends javax.swing.JFrame {
 
         jTableCarModel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Model Name", "Type", "Category"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTableCarModel.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jTableCarModel);
+        if (jTableCarModel.getColumnModel().getColumnCount() > 0) {
+            jTableCarModel.getColumnModel().getColumn(0).setResizable(false);
+            jTableCarModel.getColumnModel().getColumn(1).setResizable(false);
+            jTableCarModel.getColumnModel().getColumn(2).setResizable(false);
+            jTableCarModel.getColumnModel().getColumn(3).setResizable(false);
+        }
 
         jButtonEdit.setText("Edit");
         jButtonEdit.addActionListener(new java.awt.event.ActionListener() {

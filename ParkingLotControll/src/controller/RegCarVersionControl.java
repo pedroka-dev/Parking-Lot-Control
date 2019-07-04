@@ -36,8 +36,8 @@ public class RegCarVersionControl implements ActionListener {
             carVersion.setNameVersion(this.regCarVersionView.getjTxtnNameVersion().getText());
             carVersion.setNumberSeats(Integer.parseInt(this.regCarVersionView.getjTxtNumberSeats().getText())); //possible error
             carVersion.setTypeFuel(this.regCarVersionView.getjTxtTypeFuel().getText());
-            carVersion.setHasBrakeAbs(this.regCarVersionView.getjComboHasBreakAbs().getSelectedItem());
-            carVersion.setHasTransAuto(this.regCarVersionView.getjComboHasTransAuto().getSelectedItem());
+            //carVersion.setHasBrakeAbs(this.regCarVersionView.getjComboHasBreakAbs().getSelectedItem());
+            //carVersion.setHasTransAuto(this.regCarVersionView.getjComboHasTransAuto().getSelectedItem());
             service.CarVersionService.Create(carVersion);
         } 
         else if (e.getSource() == this.regCarVersionView.getjButtonExit()) {
