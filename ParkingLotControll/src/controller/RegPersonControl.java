@@ -3,6 +3,7 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 import model.bo.Person;
 import service.PersonService;
 import view.RegPersonView;
@@ -33,12 +34,20 @@ public class RegPersonControl implements ActionListener {
             } else {
                 person.setId(1);
             }
+            try{        //verifies if the var type is right
+                Integer.parseInt(this.regPersonView.getjTxtNumberCpf().getText());
+                Integer.parseInt(this.regPersonView.getjTxtPhone().getText());
+            }catch(NumberFormatException g){
+               JOptionPane.showMessageDialog(null,"Please use only numbers for 'Phone' or 'CPF'");
+               return;      //stops the function actionPerformed
+            }
+            
             person.setName(this.regPersonView.getjTxtName().getText());
             person.setAdress(this.regPersonView.getjTxtAddress().getText());
             person.setEmail(this.regPersonView.getjTxtEmail().getText());
             person.setNumberCpf(Integer.parseInt(this.regPersonView.getjTxtNumberCpf().getText()));
             person.setNumberRg(this.regPersonView.getjTxtNumberRg().getText());
-            person.setPhone(Integer.parseInt(this.regPersonView.getjTxtPhone().getText())); //possible error
+            person.setPhone(Integer.parseInt(this.regPersonView.getjTxtPhone().getText()));
             service.PersonService.Create(person);
         } 
         else if (e.getSource() == this.regPersonView.getjButtonExit()) {

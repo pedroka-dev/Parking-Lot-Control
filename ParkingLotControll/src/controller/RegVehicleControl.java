@@ -3,6 +3,7 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 import model.bo.Vehicle;
 import service.VehicleService;
 import view.RegVehicleView;
@@ -33,10 +34,19 @@ public class RegVehicleControl implements ActionListener {
             } else {
                 vehicle.setId(1);
             }
+            
+            
+            try{        //verifies if the var type is right
+                Integer.parseInt(this.regVehicleView.getjTxtYearFabrication().getText());   
+            }catch(NumberFormatException g){
+               JOptionPane.showMessageDialog(null,"Please use only numbers for 'Year of Fabrication'");
+               return;      //stops the function actionPerformed
+            }
+            
             vehicle.setNumberPlate(this.regVehicleView.getjTxtnNumberPlate().getText());
             vehicle.setEngineType(this.regVehicleView.getjTxtEngineType().getText());
             vehicle.setNameColor(this.regVehicleView.getjTxtNameColor().getText());
-            vehicle.setYearFabrication(Integer.parseInt(this.regVehicleView.getjTxtYearFabrication().getText())); //possible error
+            vehicle.setYearFabrication(Integer.parseInt(this.regVehicleView.getjTxtYearFabrication().getText()));
             //vehicle.setPerson(this.regVehicleView.getjComboOwner().getSelectedItem());
             //vehicle.setCarVersion(this.regVehicleView.getjComboCarVersion().getSelectedItem());
             service.VehicleService.Create(vehicle);

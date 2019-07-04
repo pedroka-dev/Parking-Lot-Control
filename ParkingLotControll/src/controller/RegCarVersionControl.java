@@ -3,6 +3,7 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 import model.bo.CarVersion;
 import service.CarVersionService;
 import view.RegCarVersionView;
@@ -33,8 +34,16 @@ public class RegCarVersionControl implements ActionListener {
             } else {
                 carVersion.setId(1);
             }
+            
+            try{        //verifies if the var type is right
+                Integer.parseInt(this.regCarVersionView.getjTxtNumberSeats().getText());
+            }catch(NumberFormatException g){
+               JOptionPane.showMessageDialog(null,"Please use only numbers for 'Number of Seats'");
+               return;      //stops the function actionPerformed
+            }
+            
             carVersion.setNameVersion(this.regCarVersionView.getjTxtnNameVersion().getText());
-            carVersion.setNumberSeats(Integer.parseInt(this.regCarVersionView.getjTxtNumberSeats().getText())); //possible error
+            carVersion.setNumberSeats(Integer.parseInt(this.regCarVersionView.getjTxtNumberSeats().getText()));
             carVersion.setTypeFuel(this.regCarVersionView.getjTxtTypeFuel().getText());
             //carVersion.setHasBrakeAbs(this.regCarVersionView.getjComboHasBreakAbs().getSelectedItem());
             //carVersion.setHasTransAuto(this.regCarVersionView.getjComboHasTransAuto().getSelectedItem());
