@@ -11,7 +11,7 @@ import model.bo.Vehicle;
 
 public class VehicleDAOSer implements InterfaceDAOSer<Vehicle> {
 
-    public static final String archiveSerialization = "C:\\Users\\Public\\Documents";
+    public static final String archiveSerialization = "C:\\Users\\Bleyc\\Documents\\SerializeVehicle.ser";
 
     @Override
     public void Create(Vehicle object) {

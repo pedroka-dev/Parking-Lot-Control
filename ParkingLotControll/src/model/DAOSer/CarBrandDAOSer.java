@@ -11,7 +11,7 @@ import model.bo.CarBrand;
 
 public class CarBrandDAOSer implements InterfaceDAOSer<CarBrand> {
 
-    public static final String archiveSerialization = "C:\\Users\\Public\\Documents";
+    public static final String archiveSerialization = "C:\\Users\\Bleyc\\Documents\\SerializeCarBrand.ser";
 
     @Override
     public void Create(CarBrand object) {

@@ -11,7 +11,7 @@ import model.bo.CarVersion;
 
 public class CarVersionDAOSer implements InterfaceDAOSer<CarVersion> {
 
-    public static final String archiveSerialization = "C:\\Users\\Public\\Documents";
+    public static final String archiveSerialization = "C:\\Users\\Bleyc\\Documents\\SerializeCarVersion.ser";
 
     @Override
     public void Create(CarVersion object) {
