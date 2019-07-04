@@ -2,12 +2,17 @@
 package view;
 
 import javax.swing.JButton;
+import javax.swing.JTable;
 
 public class ListVehicleView extends javax.swing.JFrame {
     public ListVehicleView() {
         initComponents();
     }
 
+    public JTable getjTableVehicle() {
+        return jTableVehicles;
+    }
+    
     public JButton getjButtonEdit() {
         return jButtonEdit;
     }
@@ -26,7 +31,7 @@ public class ListVehicleView extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jTableVehicles = new javax.swing.JTable();
         jButtonEdit = new javax.swing.JButton();
         jButtonExit = new javax.swing.JButton();
         jButtonDelete = new javax.swing.JButton();
@@ -36,7 +41,7 @@ public class ListVehicleView extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTableVehicles.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -63,7 +68,7 @@ public class ListVehicleView extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jTableVehicles);
 
         jButtonEdit.setText("Edit");
         jButtonEdit.addActionListener(new java.awt.event.ActionListener() {
@@ -179,6 +184,6 @@ public class ListVehicleView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTableVehicles;
     // End of variables declaration//GEN-END:variables
 }

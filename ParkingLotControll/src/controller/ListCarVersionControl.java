@@ -20,7 +20,7 @@ public class ListCarVersionControl implements ActionListener {
         this.listCarVersionView.getjButtonExit().addActionListener(this);
         this.listCarVersionView.getjButtonDelete().addActionListener(this);
         
-        DefaultTableModel tabela = (DefaultTableModel) this.listCarVersionView.getjTableCarVersion().getVersion();
+        DefaultTableModel tabela = (DefaultTableModel) this.listCarVersionView.getjTableCarVersion().getModel();
         for (CarVersion carVersionInstance : service.CarVersionService.Retrieve()) {
             tabela.addRow(new Object[]{carVersionInstance.getId(), carVersionInstance.getNameVersion(), 
                 carVersionInstance.getTypeFuel(),carVersionInstance.getNumberSeats()});

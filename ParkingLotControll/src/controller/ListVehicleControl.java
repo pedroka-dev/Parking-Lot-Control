@@ -20,7 +20,7 @@ public class ListVehicleControl implements ActionListener {
         this.listVehicleView.getjButtonExit().addActionListener(this);
         this.listVehicleView.getjButtonDelete().addActionListener(this);
         
-        DefaultTableModel tabela = (DefaultTableModel) this.listVehicleView.getjTableVehicle().getVersion();
+        DefaultTableModel tabela = (DefaultTableModel) this.listVehicleView.getjTableVehicle().getModel();
         for (Vehicle vehicleInstance : service.VehicleService.Retrieve()) {
             tabela.addRow(new Object[]{vehicleInstance.getId(), vehicleInstance.getNumberPlate(),
                 vehicleInstance.getNameColor(), vehicleInstance.getEngineType(), vehicleInstance.getYearFabrication()});

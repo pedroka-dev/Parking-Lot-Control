@@ -20,7 +20,7 @@ public class ListPersonControl implements ActionListener {
         this.listPersonView.getjButtonExit().addActionListener(this);
         this.listPersonView.getjButtonDelete().addActionListener(this);
         
-        DefaultTableModel tabela = (DefaultTableModel) this.listPersonView.getjTablePerson().getVersion();
+        DefaultTableModel tabela = (DefaultTableModel) this.listPersonView.getjTablePerson().getModel();
         for (Person personInstance : service.PersonService.Retrieve()) {
             tabela.addRow(new Object[]{personInstance.getId(), personInstance.getName(), 
                 personInstance.getAdress(), personInstance.getPhone(), personInstance.getEmail(),
