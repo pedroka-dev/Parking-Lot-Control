@@ -1,5 +1,10 @@
-# Introduction
-  A PoC App developed in Java, using MVC + DAO + Serialization patterns. In the end of development, the app must be able to keep a log of entries and exit of any registered car in the parking lot. All vehicle's information that can be used for identification, such as owner and technical details, will be stored on the database as well. The user of the App can register new Vehicles (and its brand, model an versions) and owners (Natural or Legal Person) at any time.
+# Introduction (English)
+  A PoC (Proof of Concept) App developed in Java, using MVC + DAO + Serialization patterns. In the end of development, the app must be able to keep a log of entries and exit of any registered car in the parking lot. All vehicle's information that can be used for identification, such as owner and technical details, will be stored on the database as well. The user of the App can register new Vehicles (and its brand, model and versions) and owners (Natural Person or Legal Person) at any time.
+
+# Introdução (Português)
+  Um App PoC (Proof of Concept) desenvolvido em Java, usando os padrões de MVC + DAO + Serialização. No fim do desenvolvimento, o aplicativo deve mater logs de entradas e saídas de qualquer carro registrado no estacionamento. Todas as informações do veículo que podem ser usado como idenfticação, como dono e detalhes tecnicos, serão armazenados em uma database também. O usuário da App pode registrar novos Veículos (e sua marca, modelo e versão) e donos (Pessoa Fìsica ou Pessoa Jurídica) a qualquer momento.
+  
+---
 
 # Main Goals (English)
 1. By default, Java OOP will be used for development. 
@@ -21,13 +26,17 @@
 7. Entradas e saídas devem ser registradas usando a placa do carro.
 8. Deve haver algum tipo de funcionalidade para apagar toda a lista de veículos estacionados.
 
+---
+
 # Class Diagram
 ![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Expecifications/Classes%20Diagram%20PNG.PNG?raw=true)
 
 # MVC Pattern
 ![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Expecifications/mvc%20pattern.png?raw=true)
 
-# Screenshots
+---
+
+# App Screenshots
 ![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20mainmenu%20database.JPG)
 
 ![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20mainmenu%20parking.JPG)
