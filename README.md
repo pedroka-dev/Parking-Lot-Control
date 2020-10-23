@@ -26,3 +26,34 @@
 
 # MVC Pattern
 ![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Expecifications/mvc%20pattern.png?raw=true)
+
+# Screenshots
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20mainmenu%20database.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20mainmenu%20parking.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20register%20brand.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20register%20model.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20register%20versions.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20register%20owner.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20register%20vehicle.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20register%20exitentry.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20list%20brands.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20list%20models.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20list%20versions.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20list%20owner.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20list%20vehicles.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20list%20entrylog.JPG)
+
+![alt text](https://github.com/pedro-ca/Parking-Lot-Control/blob/master/Screenshots/parkinglot%20list%20exitlog.JPG)
