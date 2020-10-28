@@ -60,6 +60,7 @@ public class ListExitView extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTableExit.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane1.setViewportView(jTableExit);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

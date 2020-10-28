@@ -57,6 +57,7 @@ public class ListVehicleView extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTableVehicles.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane1.setViewportView(jTableVehicles);
         if (jTableVehicles.getColumnModel().getColumnCount() > 0) {
             jTableVehicles.getColumnModel().getColumn(0).setResizable(false);

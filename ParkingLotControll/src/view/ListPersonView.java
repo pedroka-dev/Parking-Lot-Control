@@ -58,6 +58,8 @@ public class ListPersonView extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTablePerson.setAutoscrolls(false);
+        jTablePerson.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTablePerson.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jTablePerson);
         if (jTablePerson.getColumnModel().getColumnCount() > 0) {

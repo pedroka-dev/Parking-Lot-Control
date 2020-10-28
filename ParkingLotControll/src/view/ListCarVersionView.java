@@ -59,6 +59,7 @@ public class ListCarVersionView extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTableCarVersion.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTableCarVersion.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jTableCarVersion);
         if (jTableCarVersion.getColumnModel().getColumnCount() > 0) {

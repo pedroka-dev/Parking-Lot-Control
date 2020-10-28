@@ -68,6 +68,7 @@ public class ListParkedVehiclesView extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTableVehicles.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane1.setViewportView(jTableVehicles);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
