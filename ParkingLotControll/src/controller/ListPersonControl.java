@@ -4,6 +4,7 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.table.DefaultTableModel;
+import model.DAOSer.PersonDAOSer;
 import model.bo.Person;
 import view.ListPersonView;
 
@@ -11,6 +12,7 @@ import view.ListPersonView;
 public class ListPersonControl implements ActionListener {
     
     private view.ListPersonView listPersonView;
+    PersonDAOSer personDAOSer = new PersonDAOSer();
     
     public ListPersonControl(ListPersonView listPersonView) {
         
@@ -36,8 +38,11 @@ public class ListPersonControl implements ActionListener {
             this.listPersonView.dispose();
         }
         else if (e.getSource() == this.listPersonView.getjButtonDelete()) {
-            //desenvolver a codigifação da exclusao dos dados
+            int id = this.listPersonView.getjTablePerson().getSelectedRow();
+            if(id != -1) {
+                personDAOSer.Delete(id);
+                this.listPersonView.dispose();
+            }
         }
-        
     }
 }

@@ -4,6 +4,7 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.table.DefaultTableModel;
+import model.DAOSer.VehicleDAOSer;
 import model.bo.Vehicle;
 import view.ListVehicleView;
 
@@ -11,6 +12,7 @@ import view.ListVehicleView;
 public class ListVehicleControl implements ActionListener {
     
     private view.ListVehicleView listVehicleView;
+    VehicleDAOSer vehicleDAOSer = new VehicleDAOSer();
     
     public ListVehicleControl(ListVehicleView listVehicleView) {
         
@@ -36,8 +38,11 @@ public class ListVehicleControl implements ActionListener {
             this.listVehicleView.dispose();
         }
         else if (e.getSource() == this.listVehicleView.getjButtonDelete()) {
-            //desenvolver a codigifação da exclusao dos dados
-        }
-        
+            int id = this.listVehicleView.getjTableVehicle().getSelectedRow();
+            if(id != -1) {
+                vehicleDAOSer.Delete(id);
+                this.listVehicleView.dispose();
+            } 
+        }      
     }
 }
