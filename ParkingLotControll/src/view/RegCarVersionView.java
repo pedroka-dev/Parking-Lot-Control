@@ -210,6 +210,8 @@ public class RegCarVersionView extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
+        jTxtNumberSeats.getAccessibleContext().setAccessibleDescription("");
+
         jPanel7.setMaximumSize(new java.awt.Dimension(217, 57));
         jPanel7.setMinimumSize(new java.awt.Dimension(217, 57));
 

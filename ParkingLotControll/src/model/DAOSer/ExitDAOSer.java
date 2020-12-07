@@ -81,7 +81,23 @@ public class ExitDAOSer implements InterfaceDAOSer<Exit> {
 
     @Override
     public void Delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        Serialize serialize = new Serialize<Exit>();
+
+        List<Exit> listExit= new ArrayList<Exit>();
+
+        try {
+                listExit = serialize.DeSerialize(archiveSerialization);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        listExit.remove(id);
+
+        try {
+            serialize.Serialize(archiveSerialization, (ArrayList) listExit);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
 }

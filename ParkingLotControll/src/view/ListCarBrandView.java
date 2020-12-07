@@ -62,6 +62,7 @@ public class ListCarBrandView extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTableCarBrand.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTableCarBrand.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jTableCarBrand);
         if (jTableCarBrand.getColumnModel().getColumnCount() > 0) {

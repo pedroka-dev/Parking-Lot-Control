@@ -60,6 +60,7 @@ public class ListEntryView extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTableEntry.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane1.setViewportView(jTableEntry);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

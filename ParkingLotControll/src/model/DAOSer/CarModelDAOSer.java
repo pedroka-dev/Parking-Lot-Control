@@ -81,7 +81,23 @@ public class CarModelDAOSer implements InterfaceDAOSer<CarModel> {
 
     @Override
     public void Delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        Serialize serialize = new Serialize<CarModel>();
+
+        List<CarModel> listCarModels = new ArrayList<CarModel>();
+
+        try {
+                listCarModels = serialize.DeSerialize(archiveSerialization);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        listCarModels.remove(id);
+
+        try {
+            serialize.Serialize(archiveSerialization, (ArrayList) listCarModels);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
 }

@@ -81,7 +81,23 @@ public class PersonDAOSer implements InterfaceDAOSer<Person> {
 
     @Override
     public void Delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        Serialize serialize = new Serialize<Person>();
+
+        List<Person> listPerson= new ArrayList<Person>();
+
+        try {
+                listPerson = serialize.DeSerialize(archiveSerialization);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        listPerson.remove(id);
+
+        try {
+            serialize.Serialize(archiveSerialization, (ArrayList) listPerson);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
 }

@@ -4,6 +4,7 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.table.DefaultTableModel;
+import model.DAOSer.CarBrandDAOSer;
 import model.bo.CarBrand;
 import view.ListCarBrandView;
 
@@ -11,6 +12,7 @@ import view.ListCarBrandView;
 public class ListCarBrandControl implements ActionListener {
     
     private view.ListCarBrandView listCarBrandView;
+    CarBrandDAOSer carBrandDAOSer = new CarBrandDAOSer();
     
     public ListCarBrandControl(ListCarBrandView listCarBrandView) {
         
@@ -35,8 +37,11 @@ public class ListCarBrandControl implements ActionListener {
             this.listCarBrandView.dispose();
         }
         else if (e.getSource() == this.listCarBrandView.getjButtonDelete()) {       //opcao de menor prioridade
-            //desenvolver a codigifação da exclusao dos dados
+            int id = this.listCarBrandView.getjTableCarBrand().getSelectedRow();
+            if(id != -1) {
+                carBrandDAOSer.Delete(id);
+                this.listCarBrandView.dispose();
+            }
         }
-        
     }
 }
