@@ -1,30 +1,41 @@
-# Introduction (English)
-  A PoC (Proof of Concept) App developed in Java, using MVC + DAO + Serialization patterns. In the end of development, the app must be able to keep a log of entries and exit of any registered car in the parking lot. All vehicle's information that can be used for identification, such as owner and technical details, will be stored on the database as well. The user of the App can register new Vehicles (and its brand, model and versions) and owners (Natural Person or Legal Person) at any time.
+# Introduction
+A PoC (Proof of Concept) App developed in Java, using MVC + DAO + Serialization patterns to create an app that can log entries and exits of cars in an hypothetical parking lot. 
 
-# Introdução (Português)
-  Um App PoC (Proof of Concept) desenvolvido em Java, usando os padrões de MVC + DAO + Serialização. No fim do desenvolvimento, o aplicativo deve mater logs de entradas e saídas de qualquer carro registrado no estacionamento. Todas as informações do veículo que podem ser usado como idenfticação, como dono e detalhes tecnicos, serão armazenados em uma database também. O usuário da App pode registrar novos Veículos (e sua marca, modelo e versão) e donos (Pessoa Fìsica ou Pessoa Jurídica) a qualquer momento.
+All vehicle's information that can be used for identification, such as owner and technical details, will be stored on the database as well. The user of the App can register new Vehicles (and its brand, model and versions) and owners (Natural Person or Legal Person) at any time.
+
+
+<details>
+<summary>Introdução (Português)</summary>
+  
+Um App PoC (Proof of Concept) desenvolvido em Java, usando os padrões de MVC + DAO + Serialização para criar um aplicativo que possa registrar saidas e entradas de carros em um hipotético estacionamento. 
+  
+Todas as informações do veículo que podem ser usado como idenfticação, como dono e detalhes tecnicos, também serão armazenados em uma database . O usuário da App pode registrar novos Veículos (e sua marca, modelo e versão) e donos (Pessoa Fìsica ou Pessoa Jurídica) a qualquer momento.
+</details>
   
 ---
 
-# Main Goals (English)
-1. By default, Java OOP will be used for development. 
-2. The basic architeture will be based on: Data Acess Objet(DAO), Model View Controller (MVC), Proper Serialization and Deserialization
-3. The class registration must be completely develop, allowing: inclusion,consultion,alteration and exclusion of Serialized Data.
-4. There must be a screen that shows which vehicles are curently in the parking lot
-5. No vehicle can enter the parking lot without previously being registered
-6. The same screen must cast entries and exits through
-7. Entries and exits will be registered using the car plate
-8. There must be some kind of function to empty the entire list of parked vehicles
+# Main Goals
+  - By default, Java OOP will be used for development. 
+  - The basic architeture will be based on: Data Acess Objet(DAO), Model View Controller (MVC), Proper Serialization and Deserialization
+  - The class registration must be completely develop, allowing: inclusion,consultion,alteration and exclusion of Serialized Data.
+  - There must be a screen that shows which vehicles are curently in the parking lot
+  - No vehicle can enter the parking lot without previously being registered
+  - The same screen must cast entries and exits through
+  - Entries and exits will be registered using the car plate
+  - There must be some kind of function to empty the entire list of parked vehicles
 
-# Objetivos principais (Português)
-1. Por padrão, será usado Java POO para o desenvolvimento.
-2. A arquitetura básica ai ser baseada em: Data Acess Objet(DAO), Model View Controller (MVC), Serialização e Deserialização apropriada.
-3. O registro de classes de ser desenvolvida por completo, permitindo: inclusão,consulta, alteração e exclusão de dados Serializados.
-4. Deve haver uma tela que mostra quais veículos estão atualmente no estacionamento.
-5. Nenhum veículo pode entrar o estacionamento sem previamente ser registrado.
-6. A mesma tela deve lançar entradas e saídas.
-7. Entradas e saídas devem ser registradas usando a placa do carro.
-8. Deve haver algum tipo de funcionalidade para apagar toda a lista de veículos estacionados.
+<details>
+<summary> Objetivos principais (Português)</summary>
+  
+  - Por padrão, será usado Java POO para o desenvolvimento.
+  - A arquitetura básica ai ser baseada em: Data Acess Objet(DAO), Model View Controller (MVC), Serialização e Deserialização apropriada.
+  - O registro de classes de ser desenvolvida por completo, permitindo: inclusão,consulta, alteração e exclusão de dados Serializados.
+  - Deve haver uma tela que mostra quais veículos estão atualmente no estacionamento.
+  - Nenhum veículo pode entrar o estacionamento sem previamente ser registrado.
+  - A mesma tela deve lançar entradas e saídas.
+  - Entradas e saídas devem ser registradas usando a placa do carro.
+  - Deve haver algum tipo de funcionalidade para apagar toda a lista de veículos estacionados.
+</details>
 
 ---
 
